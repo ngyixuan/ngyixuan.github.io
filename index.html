@@ -1,421 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="ngyixuan personal website" />
+    <meta name="author" content="ngyixuan" />
+    <title>Hina's website</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="ngyixuan personal website" />
-  <meta name="author" content="ngyixuan" />
-  <title>Hina's website</title>
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- tailwind css -->
+    <link href="./css/output.css" rel="stylesheet" />
 
-  <!-- tailwind css -->
-  <link href="./css/output.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!-- Custom Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
-    rel="stylesheet" />
-</head>
+  <body class="">
+    <!-- =============== Navigation =============== -->
+    <div
+      class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 bg-white/85 supports-backdrop-blur:bg-white/60"
+    >
+      <div class="max-w-8xl mx-auto">
+        <div class="py-4 border-b border-slate-200 sm:px-8 px-4">
+          <div class="relative flex justify-between items-center">
+            <a class="mr-3 flex-none overflow-hidden md:w-auto" href="#">
+              <div class="text-base">Hina's website</div>
+            </a>
 
-<body class="">
-  <!-- =============== Navigation =============== -->
-  <div
-    class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50  bg-white/85 supports-backdrop-blur:bg-white/60">
-    <div class="max-w-8xl mx-auto">
-      <div class="py-4 border-b border-slate-200 sm:px-8   px-4">
-        <div class="relative flex justify-between items-center ">
-          <a class="mr-3 flex-none  overflow-hidden md:w-auto" href="#">
-            <div class="text-base">Hina's website</div>
+            <div class="relative hidden lg:flex items-center ml-auto">
+              <nav
+                class="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200"
+              >
+                <ul class="flex space-x-8">
+                  <li><a href="#" class="hover:text-violet-500">Home</a></li>
 
-          </a>
-
-          <div class="relative hidden lg:flex items-center ml-auto">
-            <nav class="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200">
-              <ul class="flex space-x-8">
-                <li><a href="#" class="hover:text-violet-500 ">Home</a></li>
-
-                <li><a href="#About" class="hover:text-violet-500 ">About</a></li>
-                <li><a href="#Expertise" class="hover:text-violet-500 ">Expertise</a></li>
-                <li><a href="#Timeline" class="hover:text-violet-500 ">Timeline</a></li>
-                <li><a href="#Project" class="hover:text-violet-500">Projects</a></li>
-
-
-              </ul>
-            </nav>
-
-          </div>
-          <div class="ml-2 -my-1 lg:hidden justify-self-end">
-            <button type="button"
-              class="text-slate-500 w-8 h-8 flex items-center justify-center hover:text-slate-600 "><span
-                class="">Nav</button>
-
+                  <li>
+                    <a href="#About" class="hover:text-violet-500">About</a>
+                  </li>
+                  <li>
+                    <a href="#Expertise" class="hover:text-violet-500"
+                      >Expertise</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Education" class="hover:text-violet-500"
+                      >Education</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Internship" class="hover:text-violet-500"
+                      >Internship</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#Project" class="hover:text-violet-500"
+                      >Projects</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="ml-2 -my-1 lg:hidden justify-self-end">
+              <button
+                type="button"
+                class="text-slate-500 w-8 h-8 flex items-center justify-center hover:text-slate-600"
+              >
+                <span class="">Nav</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <main id="home" class="box-border">
-    <div class="relative bg-violet-100  flex gap-2 flex-col max-w-[52rem] sm:max-w-[100%] align-middle  min-h-[100vh]">
+    <main id="home" class="box-border">
+      <div
+        class="relative bg-violet-100 flex gap-2 flex-col max-w-[52rem] sm:max-w-[100%] align-middle min-h-[100vh]"
+      >
+        <!-- =============== Welcome =============== -->
 
-
-      <!-- =============== Welcome =============== -->
- 
         <div
-        class="  mb-10 pt-10 sm:pt-20  justify-around flex flex-col-reverse gap-12 sm:gap-0 sm:flex-row mx-4  sm:mx-20 mt-4 sm:mt-10 ">
-        <div class="">
-          <div class="text-sm sm:text-xl  tracking-tight pb-1 ">
-            Hi. I am Ng Yi Xuan. You can call me Hina. <i class="uil uil-smile-squint-wink"></i>
-          </div>
-          <div class="text-xl sm:text-4xl pb-2 sm:pb-4">
-            I'm a <span class="font-semibold text-violet-600">Front-end web developer & UX/UI designer. </span>
+          class="mb-10 pt-10 sm:pt-20 grid grid-rows-2 sm:grid-cols-2 mx-4 sm:mx-20 mt-4 sm:mt-10"
+        >
+          <div
+            class="scroll-slide-in-left opacity-0 place-self-center sm:place-self-start order-last sm:order-first text-center sm:text-left"
+          >
+            <div
+              class="relative w-[max-content] text-sm sm:text-xl tracking-tight pb-1"
+            >
+              <span class="">
+                Hi. I am Ng Yi Xuan. You can call me Hina.
+                <i class="uil uil-smile-squint-wink"></i
+              ></span>
+            </div>
+            <div class="text-xl sm:text-4xl pb-2 sm:pb-4">
+              I'm a
+              <a
+                href=""
+                class="typewrite font-semibold text-violet-600"
+                data-period="2000"
+                data-type='[ "frontend developer.", "UI/UX designer."]'
+              >
+                <span class="wrap"></span>
+              </a>
+              <!-- <span class="font-semibold text-violet-600"
+                >Front-end web developer & UX/UI designer.
+              </span> -->
+            </div>
+            <div>
+              <p class="text-xs sm:text-sm">
+                Welcome! It's great to have you here. I’m a front-end web
+                developer and UX/UI designer from Malaysia. As the realm of
+                development and design undergoes continuous evolution, so has my
+                role over the past three years. I remain dedicated to learning
+                and honing my skills every day. I’m still learning and building
+                my skills everyday.
+              </p>
+            </div>
+
+            <div class="pt-4 flex gap-4 justify-center sm:justify-start">
+              <a
+                class="duration-300 hover:text-violet-500 text-3xl"
+                href="https://www.linkedin.com/in/ng-yi-xuan-735878227/"
+                target="_blank"
+              >
+                <i class="uil uil-linkedin"></i>
+              </a>
+              <a
+                class="duration-300 hover:text-violet-500 text-3xl"
+                href="mailto:ngyixuan2009@gmail.com"
+                target="_blank"
+              >
+                <i class="uil uil-envelope-alt"></i>
+              </a>
+              <a
+                class="duration-300 hover:text-violet-500 text-3xl"
+                href="https://github.com/ngyixuan"
+                target="_blank"
+              >
+                <i class="uil uil-github"></i>
+              </a>
+              <a
+                class="duration-300 hover:text-violet-500 text-3xl"
+                href="https://github.com/ngyixuan"
+                target="_blank"
+              >
+                <i class="uil uil-instagram"></i>
+              </a>
+            </div>
           </div>
 
-          <div class="flex gap-4">
-            <a class="duration-300 hover:text-violet-500 text-3xl"
-              href="https://www.linkedin.com/in/ng-yi-xuan-735878227/" target="_blank">
-              <i class="uil uil-linkedin"></i>
-            </a>
-            <a class="duration-300 hover:text-violet-500 text-3xl" href="mailto:ngyixuan2009@gmail.com" target="_blank">
-              <i class="uil uil-envelope-alt"></i>
-
-            </a>
-            <a class="duration-300 hover:text-violet-500 text-3xl" href="https://github.com/ngyixuan" target="_blank">
-              <i class="uil uil-github"></i>
-            </a>
-            <a class="duration-300 hover:text-violet-500 text-3xl" href="https://github.com/ngyixuan" target="_blank">
-              <i class="uil uil-instagram"></i>
-            </a>
+          <div class="scroll-slide-in-right opacity-0 place-content-start">
+            <img
+              class="mx-auto block size-64"
+              src="/assets/avatar.svg"
+              alt=""
+            />
           </div>
-
+          <a
+            href="#About"
+            class="hidden sm:block absolute left-1/2 bottom-12 text-5xl animate-bounce cursor-pointer hover:text-violet-500"
+            ><i class="uil uil-angle-down size-64"></i
+          ></a>
         </div>
+      </div>
 
-        <div class="">
-          <img class="mx-auto block size-64" src="/assets/avatar.svg" alt="">
+      <!-- =============== About =============== -->
+
+      <div
+        id="About"
+        class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[80%] mx-auto px-4 sm:px-20"
+      >
+        <div class="mb-4 text-base sm:text-3xl tracking-tight font-bold">
+          About Me
         </div>
-        <a href="#About"
-          class="hidden sm:block absolute left-1/2 bottom-12 text-5xl animate-bounce cursor-pointer hover:text-violet-500"><i
-            class="uil uil-angle-down size-64"></i></a>
+        <p class="scroll-fade-in opacity-0 text-xs sm:text-sm">
+          Welcome! It's great to have you here. I’m a front-end web developer
+          and UX/UI designer from Malaysia. As the realm of development and
+          design undergoes continuous evolution, so has my role over the past
+          three years. I remain dedicated to learning and honing my skills every
+          day. I’m still learning and building my skills everyday.
+        </p>
+        <a
+          href="/file/NG YI XUAN_SG.pdf"
+          download
+          class="scroll-fade-in opacity-0 mt-4 sm:mt-10 duration-300 border-black px-4 border-2 rounded-lg items-center relative inline-flex gap-x-2 text-xs sm:text-sm font-semibold hover:bg-transparent hover:text-violet-500 hover:border-violet-500"
+        >
+          Download full resume
+          <i class="text-3xl uil uil-folder-download"></i>
+        </a>
       </div>
-     
-   
 
-    </div>
-
-
-    <!-- =============== About =============== -->
-
-    <div id="About" class="pt-20 pb-4 sm:text-center max-w-[52rem] sm:max-w-[80%] mx-auto px-4 sm:px-20 ">
-      <div class="mb-4 text-base sm:text-2xl tracking-tight font-bold">
-        About Me
-      </div>
-      <p class="text-xs sm:text-sm">
-        Welcome! It's great to have you here.
-        I’m a front-end web developer and UX/UI designer from Malaysia.
-        As the realm of development and design undergoes continuous
-        evolution, so has my role over the past three years. I remain
-        dedicated to learning and honing my skills every day. I’m still
-        learning and building my skills everyday.</span>
-      </p>
-      <a href="/file/NG YI XUAN_SG.pdf" download class="mt-4 sm:mt-10 duration-300 border-black px-4  border-2 rounded-lg items-center  relative inline-flex  gap-x-2 text-xs sm:text-sm font-semibold hover:bg-transparent hover:text-violet-500 hover:border-violet-500">
-        Download full resume
-        <i class="text-3xl uil uil-folder-download"></i>
-    </a>
-
-
-    </div>
-
-    <!-- =============== Expertise =============== -->
-    <div id="Expertise"
-      class="pt-20 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%]  mx-4  sm:mx-20 ">
-      <div class="mb-4 text-base sm:text-2xl tracking-tight font-bold">
-        Expertise
-      </div>
-      <div class="border-slate-200 border my-4 sm:mb:8 rounded-lg sm:rounded-xl  py-4 sm:py-12 px-4 sm:px-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div class="flex gap-2 sm:gap-4 flex-col justify-center items-center ">
-            <img class="shrink-0 size-14 sm:size-16" src="./assets/developer.svg" alt="">
-            <div class="text-sm sm:text-base font-bold">Software Developer</div>
-            <p class="text-xs sm:text-sm text-center w-auto sm:w-[50%]">I'm passionate about writing neat, efficient
-              code to add features like responsive layouts, API connections, and faster performance. </p>
-          </div>
-          <div class="grid gap-4 sm:gap-8 grid-cols-4 sm:grid-cols-6 ">
-            <!-- todo tooltip -->
-            <img class="size-10 sm:size-16" src="./assets/html.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/css.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/javascript.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/typescript.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/bootstrap.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/nodejs.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/react.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/vue.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/git.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/java.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/python.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/mysql.svg" alt="">
+      <!-- =============== Expertise =============== -->
+      <div
+        id="Expertise"
+        class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
+      >
+        <div class="mb-4 text-base sm:text-3xl tracking-tight font-bold">
+          Expertise
+        </div>
+        <div
+          class="scroll-slide-in-right-100 opacity-0 border-slate-200 border my-4 sm:mb:8 rounded-lg sm:rounded-xl py-4 sm:py-12 px-4 sm:px-8"
+        >
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div
+              class="flex gap-2 sm:gap-4 flex-col justify-center items-center"
+            >
+              <img
+                class="shrink-0 size-14 sm:size-16"
+                src="./assets/developer.svg"
+                alt=""
+              />
+              <div class="text-sm sm:text-base font-bold">
+                Software Developer
+              </div>
+              <p class="text-xs sm:text-sm text-center w-auto sm:w-[50%]">
+                I'm passionate about writing neat, efficient code to add
+                features like responsive layouts, API connections, and faster
+                performance.
+              </p>
+            </div>
+            <div class="grid gap-4 sm:gap-8 grid-cols-4 sm:grid-cols-6">
+              <!-- todo tooltip -->
+              <img class="size-10 sm:size-16" src="./assets/html.svg" alt="" />
+              <img class="size-10 sm:size-16" src="./assets/css.svg" alt="" />
+              <img
+                class="size-10 sm:size-16"
+                src="./assets/javascript.svg"
+                alt=""
+              />
+              <img
+                class="size-10 sm:size-16"
+                src="./assets/typescript.svg"
+                alt=""
+              />
+              <img
+                class="size-10 sm:size-16"
+                src="./assets/bootstrap.svg"
+                alt=""
+              />
+              <img
+                class="size-10 sm:size-16"
+                src="./assets/nodejs.svg"
+                alt=""
+              />
+              <img class="size-10 sm:size-16" src="./assets/react.svg" alt="" />
+              <img class="size-10 sm:size-16" src="./assets/vue.svg" alt="" />
+              <img class="size-10 sm:size-16" src="./assets/git.svg" alt="" />
+              <img class="size-10 sm:size-16" src="./assets/java.svg" alt="" />
+              <img
+                class="size-10 sm:size-16"
+                src="./assets/python.svg"
+                alt=""
+              />
+              <img class="size-10 sm:size-16" src="./assets/mysql.svg" alt="" />
+            </div>
           </div>
         </div>
-
-      </div>
-      <div class="border-slate-200 border my-4 sm:mb:8 rounded-lg sm:rounded-xl py-4 sm:py-12 px-4 sm:px-8">
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
-          <div class="flex gap-4 flex-col justify-center items-center ">
-            <img class="shrink-0   size-14 sm:size-16" src="./assets/design.svg" alt="">
-            <div class="text-sm sm:text-base font-bold">Design</div>
-            <p class="text-xs sm:text-sm text-center w-auto sm:w-[50%]">I enjoy creating organized content and
-              user-friendly interfaces tailored to my audience's needs. </p>
-          </div>
-          <div class="grid gap-4 sm:gap-8 grid-cols-4 sm:grid-cols-6 ">
-
-            <img class="size-10 sm:size-16" src="./assets/photoshop.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/illustrator.svg" alt="">
-            <img class="size-10 sm:size-16" src="./assets/figma.svg" alt="">
-
-
+        <div
+          class="scroll-slide-in-left-100 opacity-0 border-slate-200 border my-4 sm:mb:8 rounded-lg sm:rounded-xl py-4 sm:py-12 px-4 sm:px-8"
+        >
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+            <div class="flex gap-4 flex-col justify-center items-center">
+              <img
+                class="shrink-0 size-14 sm:size-16"
+                src="./assets/design.svg"
+                alt=""
+              />
+              <div class="text-sm sm:text-base font-bold">Design</div>
+              <p class="text-xs sm:text-sm text-center w-auto sm:w-[50%]">
+                I enjoy creating organized content and user-friendly interfaces
+                tailored to my audience's needs.
+              </p>
+            </div>
+            <div class="grid gap-4 sm:gap-8 grid-cols-4 sm:grid-cols-6">
+              <img
+                class="size-10 sm:size-16"
+                src="./assets/photoshop.svg"
+                alt=""
+              />
+              <img
+                class="size-10 sm:size-16"
+                src="./assets/illustrator.svg"
+                alt=""
+              />
+              <img class="size-10 sm:size-16" src="./assets/figma.svg" alt="" />
+            </div>
           </div>
         </div>
-
       </div>
 
-    </div>
+      <!-- =============== Timeline =============== -->
 
-    <!-- =============== Timeline =============== -->
-
-    <div id="Timeline" class="pt-20 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4  sm:mx-20 ">
-      <div class="mb-4 text-base sm:text-2xl tracking-tight font-bold">
-        Timeline
-      </div>
-
-    </div>
-    <!-- Tab bar -->
-    <div class="flex gap-8 mb-12 sm:mb-16 justify-center mx-4  sm:mx-20  ">
+      <!-- Tab bar -->
+      <!-- <div class="flex gap-8 mb-12 sm:mb-16 justify-center mx-4  sm:mx-20  ">
 
       <div
         class="inline-flex gap-2 bg-violet-100 text-violet-500 rounded-full px-4 py-1 mx-2 items-center text-sm sm:text-base cursor-pointer font-semibold hover:text-violet-500"
-        data-target="#education">
+        data-target="#Education">
         <i class="uil uil-graduation-cap"></i>
 
         Education
       </div>
       <div
         class="inline-flex gap-2 rounded-full px-4 py-1 mx-2 items-center text-sm sm:text-base cursor-pointer  hover:text-violet-500"
-        data-target="#work">
+        data-target="#Internship">
         <i class="uil uil-suitcase"></i> Internship
-      </div>
+      </div> -->
 
-    </div>
-    <!-- Education -->
-    <div class="mx-4  sm:mx-20 " data-content id="education">
-      <div style="" class="">
-        <!-- <div class="">
-          <span class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center">
-          </span>
-          <span class="h-[100%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]">
-          </span>
-        </div> -->
-        <div class="place-self-start border-b border-slate-200 pb-4 sm:pb-12 flex flex-col sm:flex-row gap-1 sm:gap-6">
-          <img class=" size-16 sm:size-24 " src="../assets/nus.svg" alt="">
-          <div class=" flex-1">
-            <span class="text-xs sm:text-sm font-normal">
-              Aug-2023 → Present
-            </span>
-            <div class=" flex  justify-between  text-sm sm:text-base font-bold">
-              National University of Singapore
-            </div>
-            <div class="pb-1 sm:pb-4  text-xs sm:text-sm">Master of Computing ( General Track )
-            </div>
-            <p>
-              Some description here..
-            </p>
-          </div>
+      <!-- =============== Education =============== -->
+
+      <div
+        id="Education"
+        class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
+      >
+        <div class="mb-4 text-base sm:text-3xl tracking-tight font-bold">
+          Education
         </div>
-
-
-      </div>
-      <div style="" class=" ">
-        <!-- <div class="">
-          <span class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center">
-          </span>
-        </div> -->
-        <div class="w-full place-self-start  py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6">
-          <img class="size-16 sm:size-24" src="../assets/cuc.svg" alt="">
-          <div class=" flex-1">
-            <span class="text-xs sm:text-sm font-normal">
-              Sep-2019 → Jun-2023
-            </span>
-            <div class=" flex  justify-between  text-sm sm:text-base font-bold">
-              Communication University of China
-
-
+        <div class="">
+          <div
+            class="scroll-slide-in-bottom opacity-0 border-b border-slate-200 pb-4 sm:pb-12 pt-4 sm:pt-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
+          >
+            <img class="size-16 sm:size-24" src="../assets/nus.svg" alt="" />
+            <div class="text-left flex-1">
+              <span class="text-xs sm:text-sm font-normal">
+                Aug-2023 → Present
+              </span>
+              <div class="flex justify-between text-sm sm:text-base font-bold">
+                National University of Singapore
+              </div>
+              <div class="pb-1 sm:pb-4 text-xs sm:text-sm">
+                Master of Computing ( General Track )
+              </div>
+              <p>Some description here..</p>
             </div>
-            <div class="pb-1 sm:pb-4  text-xs sm:text-sm">Bachelor Degree of Digital Media of Art
-            </div>
-
-            <p>
-              Some description here..
-            </p>
           </div>
-        </div>
-      </div>
 
-
-    </div>
-    <!-- Work -->
-    <div class="hidden mx-4  sm:mx-20 " data-content id="work">
-      <div style="" class=" ">
-        <!-- <div class="">
-          <span class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center">
-          </span>
-          <span class="h-[100%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]">
-          </span>
-        </div> -->
-        <div
-          class="w-full place-self-start  border-b border-slate-200 pb-4 sm:pb-12 flex flex-col sm:flex-row gap-1 sm:gap-4">
-          <div class="flex justify-center items-center  size-16 sm:size-24 bg-slate-200 rounded-full "> <i class=" text-3xl uil uil-building"></i></div>
-         
-          <div class=" flex-1">
-            <span class="text-xs sm:text-sm font-normal">
-              May 2022 - May 2023
-            </span>
-            <div class=" flex  justify-between  text-sm sm:text-base font-bold">
-              Beijing Zhongjia Interactive Entertainment Co., Ltd.
-            </div>
-            <div class="pb-1 sm:pb-4  text-xs sm:text-sm">Frontend Internship
-            </div>
-
-            <p>
-              Some description here..
-            </p>
-          </div>
-        </div>
-
-      </div>
-      <div style="" class="">
-        <!-- <div class="">
+          <!-- <div class="">
           <span class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center">
           </span>
         </div> -->
-        <div class="w-full place-self-start py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6">
-          <img class="size-16 sm:size-24" src="../assets/Kinglead.svg" alt="">
-          <div class=" flex-1">
-            <span class="text-xs sm:text-sm font-normal">
-              Dec 2022 - Jan 2023
+          <div
+            style="animation-delay: 0.2s !important"
+            class="opacity-0 scroll-slide-in-bottom py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
+          >
+            <img class="size-16 sm:size-24" src="../assets/cuc.svg" alt="" />
+            <div class="text-left flex-1">
+              <span class="text-xs sm:text-sm font-normal">
+                Sep-2019 → Jun-2023
+              </span>
+              <div class="flex justify-between text-sm sm:text-base font-bold">
+                Communication University of China
+              </div>
+              <div class="pb-1 sm:pb-4 text-xs sm:text-sm">
+                Bachelor Degree of Digital Media of Art
+              </div>
+
+              <p>Some description here..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- =============== Internship =============== -->
+      <div
+        id="Internship"
+        class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
+      >
+        <div class="mb-4 text-base sm:text-3xl tracking-tight font-bold">
+          Internship
+        </div>
+        <div class=" ">
+          <!-- <div class="">
+              <span class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center">
+              </span>
+              <span class="h-[100%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]">
+              </span>
+            </div> -->
+          <div
+            class="scroll-slide-in-bottom opacity-0 border-b border-slate-200 pb-4 sm:pb-12 pt-4 sm:pt-12 flex flex-col sm:flex-row gap-1 sm:gap-4"
+          >
+            <div
+              class="flex justify-center items-center size-16 sm:size-24 bg-slate-200 rounded-full"
+            >
+              <i class="text-3xl uil uil-building"></i>
+            </div>
+
+            <div class="text-left flex-1">
+              <span class="text-xs sm:text-sm font-normal">
+                May 2022 - May 2023
+              </span>
+              <div class="flex justify-between text-sm sm:text-base font-bold">
+                Beijing Zhongjia Interactive Entertainment Co., Ltd.
+              </div>
+              <div class="pb-1 sm:pb-4 text-xs sm:text-sm">
+                Frontend Internship
+              </div>
+
+              <p>Some description here..</p>
+            </div>
+          </div>
+
+          <!-- <div class="">
+              <span class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center">
+              </span>
+            </div> -->
+          <div
+            style="animation-delay: 0.2s !important"
+            class="opacity-0 scroll-slide-in-bottom py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
+          >
+            <img
+              class="size-16 sm:size-24"
+              src="../assets/Kinglead.svg"
+              alt=""
+            />
+            <div class="text-left flex-1">
+              <span class="text-xs sm:text-sm font-normal">
+                Dec 2022 - Jan 2023
+              </span>
+              <div class="flex justify-between text-sm sm:text-base font-bold">
+                Kinglead Company
+              </div>
+              <div class="pb-1 sm:pb-4 text-xs sm:text-sm">
+                Frontend Internship
+              </div>
+
+              <p>Some description here..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =============== Project =============== -->
+      <div
+        id="Project"
+        class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
+      >
+        <div class="mb-4 text-base sm:text-3xl tracking-tight font-bold">
+          Project
+        </div>
+        <p
+          class="scroll-fade-in opacity-0 text-xs sm:text-sm sm:w-[60%] mx-auto"
+        >
+          This is a showcase of my work in a variety of field including Software
+          Development and UI/UX design. For more insights into my other
+          projects, feel free to explore my
+          <a
+            class="text-violet-500"
+            href="https://github.com/ngyixuan"
+            target="_blank"
+          >
+            GitHub <i class="mr-1 uil uil-github"></i>
+          </a>
+        </p>
+      </div>
+
+      <!-- Timeline -->
+      <div class="relative mx-4 sm:mx-20 ] mb-20">
+        <div class="flex flex-col sm:flex-row gap-x-3">
+          <div
+            class="hidden sm:block absolute -left-10 top-0 text-xs sm:text-sm flex-none w-8 text-center mb-4 sm:mb-0"
+          >
+            2024
+          </div>
+          <div class="hidden sm:block">
+            <span
+              class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center"
+            >
             </span>
-            <div class=" flex  justify-between  text-sm sm:text-base font-bold">
-              Kinglead Company
+            <span
+              class="h-[90%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]"
+            >
+            </span>
+          </div>
+          <div
+            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 sm:mb:8 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 pl-6 sm:pl-12"
+          >
+            <h2 class="text-base sm:text-xl font-bold relative tracking-tight">
+              Project title
+            </h2>
+
+            <div class="text-xs sm:text-sm py-4">project description</div>
+            <div class="relative flex flex-wrap gap-2">
+              <label
+                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+              >
+                <img class="size-4 sm:size-5" src="../assets/react.svg" alt />
+                <span class="text-xs">React</span>
+              </label>
+              <label
+                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+              >
+                <img
+                  class="size-4 sm:size-5"
+                  src="../assets/tailwindcss.svg"
+                  alt
+                />
+                <span class="text-xs">TailwindCSS</span>
+              </label>
             </div>
-            <div class="pb-1 sm:pb-4  text-xs sm:text-sm">Frontend Internship
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-x-3">
+          <div class="hidden sm:block">
+            <span
+              class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center"
+            >
+            </span>
+            <span
+              class="h-[90%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]"
+            >
+            </span>
+          </div>
+          <div
+            style="animation-delay: 0.2s"
+            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 sm:mb:8 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 pl-6 sm:pl-12"
+          >
+            <h2 class="text-base sm:text-xl font-bold relative tracking-tight">
+              Project title
+            </h2>
+
+            <div class="text-xs sm:text-sm py-4">project description</div>
+            <div class="relative flex flex-wrap gap-2">
+              <label
+                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+              >
+                <img class="size-4 sm:size-5" src="../assets/react.svg" alt />
+                <span class="text-xs">React</span>
+              </label>
+              <label
+                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+              >
+                <img
+                  class="size-4 sm:size-5"
+                  src="../assets/tailwindcss.svg"
+                  alt
+                />
+                <span class="text-xs">TailwindCSS</span>
+              </label>
             </div>
-
-            <p>
-              Some description here..
-            </p>
           </div>
         </div>
       </div>
+    </main>
 
-
-
-    </div>
-
-    <!-- =============== Project =============== -->
-    <div id="Project" class="pt-12 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4  sm:mx-20  ">
-      <div class="mb-4 text-base sm:text-2xl tracking-tight font-bold">
-        Project
-      </div>
-      <p class="text-xs sm:text-sm sm:w-[60%] mx-auto ">
-        This is a showcase of my work in a variety of field including
-        Software
-        Development and UI/UX design. For more insights into my other
-        projects, feel free to explore my <a class="text-violet-500 " href="https://github.com/ngyixuan"
-          target="_blank">
-          GitHub <i class="mr-1 uil uil-github"></i>
-        </a>
-      </p>
-    </div>
-
-    <!-- Timeline -->
-    <div class="relative mx-4 sm:mx-20  ] mb-20  ">
-      <div class="flex flex-col sm:flex-row gap-x-3 ">
-        <div class="hidden sm:block absolute -left-10 top-0 text-xs sm:text-sm flex-none w-8 text-center mb-4 sm:mb-0">
-          2024
-        </div>
-        <div class="hidden sm:block">
-          <span class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center">
-          </span>
-          <span class="h-[90%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]">
-
-          </span>
-        </div>
-        <div
-          class="group relative flex-1 mb-4 sm:mb:8 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 pl-6 sm:pl-12  ">
-
-          <h2 class="text-base sm:text-xl font-bold relative  tracking-tight ">Project
-            title</h2>
-
-          <div class="   text-xs sm:text-sm py-4 ">
-            project description
-          </div>
-          <div class="relative  flex flex-wrap gap-2 ">
-            <label
-              class=" flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full ">
-              <img class="size-4 sm:size-5" src="../assets/react.svg" alt>
-              <span class="text-xs">React</span>
-            </label>
-            <label
-              class=" flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full ">
-              <img class="size-4 sm:size-5" src="../assets/tailwindcss.svg" alt>
-              <span class="text-xs">TailwindCSS</span>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="flex flex-col sm:flex-row gap-x-3">
-        <div class="hidden sm:block">
-          <span class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center">
-          </span>
-          <span class="h-[90%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]">
-
-          </span>
-        </div>
-        <div
-          class="group relative flex-1 mb-4 sm:mb:8 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 pl-6 sm:pl-12  ">
-
-          <h2 class="text-base sm:text-xl font-bold relative  tracking-tight ">Project
-            title</h2>
-
-          <div class="   text-xs sm:text-sm py-4 ">
-            project description
-          </div>
-          <div class="relative  flex flex-wrap gap-2 ">
-            <label
-              class=" flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full ">
-              <img class="size-4 sm:size-5" src="../assets/react.svg" alt>
-              <span class="text-xs">React</span>
-            </label>
-            <label
-              class=" flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full ">
-              <img class="size-4 sm:size-5" src="../assets/tailwindcss.svg" alt>
-              <span class="text-xs">TailwindCSS</span>
-            </label>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-
-
-    </div>
-  </main>
-
-  <a href="#" class="fixed transition-all duration-500 -bottom-[10%] right-10" id="scroll-up">
-    <img class="size-10" src="/assets/arrowUp.svg" alt="">
-  </a>
-</body>
-
+    <a
+      href="#"
+      class="fixed transition-all duration-500 -bottom-[10%] right-10"
+      id="scroll-up"
+    >
+      <img class="size-10" src="/assets/arrowUp.svg" alt="" />
+    </a>
+  </body>
 </html>
 
 <script>
@@ -426,7 +569,7 @@
   tabs.forEach((tab) => {
     tab.addEventListener("click", () => {
       const target = document.querySelector(tab.dataset.target);
-      console.log(target)
+      console.log(target);
 
       tabContents.forEach((tabContent) => {
         tabContent.classList.add("hidden");
@@ -449,4 +592,113 @@
     else scrollUp.classList.remove("bottom-[10%]");
   }
   window.addEventListener("scroll", scrollUp);
+
+  /*==================== Scroll Down Trigger Animation ====================*/
+  // Create the observer
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target.classList.contains("scroll-slide-in-right")) {
+          entry.target.classList.add("animate-slide-in-right");
+        } else if (entry.target.classList.contains("scroll-slide-in-left")) {
+          entry.target.classList.add("animate-slide-in-left");
+        } else if (
+          entry.target.classList.contains("scroll-slide-in-right-100")
+        ) {
+          entry.target.classList.add("animate-slide-in-right-100");
+        } else if (
+          entry.target.classList.contains("scroll-slide-in-left-100")
+        ) {
+          entry.target.classList.add("animate-slide-in-left-100");
+        } else if (entry.target.classList.contains("scroll-slide-in-bottom")) {
+          entry.target.classList.add("animate-slide-in-bottom");
+        } else if (entry.target.classList.contains("scroll-fade-in")) {
+          entry.target.classList.add("animate-fade-in");
+        }
+        setTimeout(() => {
+          entry.target.classList.remove("opacity-0");
+        }, 1000);
+      }
+    });
+  });
+
+  // Tell the observer which elements to track
+  const slideInLeftElem = document.querySelectorAll(".scroll-slide-in-left");
+  const slideInRightElem = document.querySelectorAll(".scroll-slide-in-right");
+  const slideInRight100Elem = document.querySelectorAll(
+    ".scroll-slide-in-right-100",
+  );
+  const slideInLeft100Elem = document.querySelectorAll(
+    ".scroll-slide-in-left-100",
+  );
+  const slideInBottomElem = document.querySelectorAll(
+    ".scroll-slide-in-bottom",
+  );
+  const fadeInElem = document.querySelectorAll(".scroll-fade-in");
+  slideInLeftElem.forEach((element) => observer.observe(element));
+  slideInRightElem.forEach((element) => observer.observe(element));
+  slideInBottomElem.forEach((element) => observer.observe(element));
+  slideInLeft100Elem.forEach((element) => observer.observe(element));
+  slideInRight100Elem.forEach((element) => observer.observe(element));
+  fadeInElem.forEach((element) => observer.observe(element));
+
+  // Typing Animation
+  var TxtType = function (el, toRotate, period) {
+    this.toRotate = toRotate;
+    this.el = el;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = "";
+    this.tick();
+    this.isDeleting = false;
+  };
+
+  TxtType.prototype.tick = function () {
+    var i = this.loopNum % this.toRotate.length;
+    var fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
+
+    var that = this;
+    var delta = 200 - Math.random() * 100;
+
+    if (this.isDeleting) {
+      delta /= 2;
+    }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === "") {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function () {
+      that.tick();
+    }, delta);
+  };
+
+  window.onload = function () {
+    var elements = document.getElementsByClassName("typewrite");
+    for (var i = 0; i < elements.length; i++) {
+      var toRotate = elements[i].getAttribute("data-type");
+      var period = elements[i].getAttribute("data-period");
+      if (toRotate) {
+        new TxtType(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+    // INJECT CSS
+    var css = document.createElement("style");
+    css.type = "text/css";
+    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    document.body.appendChild(css);
+  };
 </script>
