@@ -26,61 +26,96 @@
 
   <body class="">
     <!-- =============== Navigation =============== -->
-    <div
+    <header
       class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 bg-white/85 supports-backdrop-blur:bg-white/60"
     >
-      <div class="max-w-8xl mx-auto">
-        <div class="py-4 border-b border-slate-200 sm:px-8 px-4">
-          <div class="relative flex justify-between items-center">
-            <a class="mr-3 flex-none overflow-hidden md:w-auto" href="#">
-              <div class="text-base">Hina's website</div>
-            </a>
+      <div
+        class="max-w-8xl mx-auto py-4 border-b border-slate-200 sm:px-8 px-4"
+      >
+        <nav
+          class="relative flex flex-wrap justify-between items-center w-full"
+        >
+          <div class="">
+            <a href="#" class="text-base">Hina's website</a>
+          </div>
 
-            <div class="relative hidden lg:flex items-center ml-auto">
-              <nav
-                class="text-sm leading-6 font-semibold text-slate-700 dark:text-slate-200"
-              >
-                <ul class="flex space-x-8">
-                  <li><a href="#" class="hover:text-violet-500">Home</a></li>
+          <span class="lg:hidden mobile-btn"></span>
 
-                  <li>
-                    <a href="#About" class="hover:text-violet-500">About</a>
-                  </li>
-                  <li>
-                    <a href="#Expertise" class="hover:text-violet-500"
-                      >Expertise</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#Education" class="hover:text-violet-500"
-                      >Education</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#Internship" class="hover:text-violet-500"
-                      >Internship</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#Project" class="hover:text-violet-500"
-                      >Projects</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div class="ml-2 -my-1 lg:hidden justify-self-end">
-              <button
-                type="button"
-                class="text-slate-500 w-8 h-8 flex items-center justify-center hover:text-slate-600"
+          <div
+            class="hidden md:flex md:items-center md:w-auto"
+            id="desktop-menu"
+          >
+            <ul class="flex justify-between space-x-8">
+              <li>
+                <a href="#" class="hover:text-violet-500 block">Home</a>
+              </li>
+
+              <li>
+                <a href="#About" class="hover:text-violet-500 block">About</a>
+              </li>
+              <li>
+                <a href="#Expertise" class="hover:text-violet-500 block"
+                  >Expertise</a
+                >
+              </li>
+              <li>
+                <a href="#Education" class="hover:text-violet-500 block"
+                  >Education</a
+                >
+              </li>
+              <li>
+                <a href="#Internship" class="hover:text-violet-500 block"
+                  >Internship</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#Project"
+                  class="hover:text-violet-500 block my-4 lg:my-0"
+                  >Projects</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-full md:hidden" id="mobile-menu">
+            <div class="">
+              <ul
+                class="flex flex-col items-center justify-center gap-8 text-center text-base menu-left mobile-menu"
               >
-                <span class="">Nav</span>
-              </button>
+                <div class="h-12 w-full"></div>
+                <li>
+                  <a href="#" class="hover:text-violet-500 block">Home</a>
+                </li>
+
+                <li>
+                  <a href="#About" class="hover:text-violet-500 block">About</a>
+                </li>
+                <li>
+                  <a href="#Expertise" class="hover:text-violet-500 block"
+                    >Expertise</a
+                  >
+                </li>
+                <li>
+                  <a href="#Education" class="hover:text-violet-500 block"
+                    >Education</a
+                  >
+                </li>
+                <li>
+                  <a href="#Internship" class="hover:text-violet-500 block"
+                    >Internship</a
+                  >
+                </li>
+                <li class="mb-12">
+                  <a href="#Project" class="hover:text-violet-500 block"
+                    >Projects</a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-        </div>
+        </nav>
       </div>
-    </div>
+    </header>
     <main id="home" class="box-border">
       <div
         class="relative bg-violet-100 flex gap-2 flex-col max-w-[52rem] sm:max-w-[100%] align-middle min-h-[100vh]"
@@ -94,14 +129,14 @@
             class="scroll-slide-in-left opacity-0 place-self-center sm:place-self-start order-last sm:order-first text-center sm:text-left"
           >
             <div
-              class="relative w-[max-content] text-sm sm:text-xl tracking-tight pb-1"
+              class="relative w-[max-content] pt-4 sm:pt-0 text-sm sm:text-xl tracking-tight pb-1"
             >
               <span class="">
                 Hi. I am Ng Yi Xuan. You can call me Hina.
                 <i class="uil uil-smile-squint-wink"></i
               ></span>
             </div>
-            <div class="text-xl sm:text-4xl pb-2 sm:pb-4">
+            <div class="text-2xl sm:text-4xl pb-2 sm:pb-4">
               I'm a
               <a
                 href=""
@@ -116,13 +151,13 @@
               </span> -->
             </div>
             <div>
-              <p class="text-xs sm:text-sm">
+              <p class="text-sm">
                 Welcome! It's great to have you here. I’m a front-end web
                 developer and UX/UI designer from Malaysia. As the realm of
-                development and design undergoes continuous evolution, so has my
-                role over the past three years. I remain dedicated to learning
-                and honing my skills every day. I’m still learning and building
-                my skills everyday.
+                development and design undergoes continuous evolution, I remain
+                dedicated to learning and honing my skills every day. I’m still
+                learning and building my skills everyday. Feel free to contact
+                me!
               </p>
             </div>
 
@@ -161,7 +196,7 @@
           <div class="scroll-slide-in-right opacity-0 place-content-start">
             <img
               class="mx-auto block size-64"
-              src="/assets/avatar.svg"
+              src="./assets/avatar.svg"
               alt=""
             />
           </div>
@@ -179,15 +214,22 @@
         id="About"
         class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[80%] mx-auto px-4 sm:px-20"
       >
-        <div class="mb-4 text-base sm:text-3xl tracking-tight font-bold">
+        <div class="mb-4 text-xl sm:text-3xl tracking-tight font-bold">
           About Me
         </div>
-        <p class="scroll-fade-in opacity-0 text-xs sm:text-sm">
-          Welcome! It's great to have you here. I’m a front-end web developer
-          and UX/UI designer from Malaysia. As the realm of development and
-          design undergoes continuous evolution, so has my role over the past
-          three years. I remain dedicated to learning and honing my skills every
-          day. I’m still learning and building my skills everyday.
+        <p class="scroll-fade-in opacity-0 text-sm">
+          I am a Computer Science Graduate Student at the National University of
+          Singapore, passionate about problem-solving and coding. I consistently
+          strive to deliver excellence in every task I undertake. Throughout my
+          bachelor's and graduate studies, I have gained proficiency in a range
+          of technologies including React, Vue, JavaScript, Python, Java, MySQL,
+          and PostgreSQL. With two years of project and work experience, I have
+          honed my skills and developed a strong foundation. My passion lies in
+          crafting sophisticated applications that address real-world challenges
+          and make a meaningful impact on millions of users. Looking for an
+          opportunity to work in a challenging position combining my skills in
+          Software Engineering, which provides professional development,
+          interesting experiences and personal growth.
         </p>
         <a
           href="/file/NG YI XUAN_SG.pdf"
@@ -204,7 +246,7 @@
         id="Expertise"
         class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
       >
-        <div class="mb-4 text-base sm:text-3xl tracking-tight font-bold">
+        <div class="mb-4 text-xl sm:text-3xl tracking-tight font-bold">
           Expertise
         </div>
         <div
@@ -222,7 +264,7 @@
               <div class="text-sm sm:text-base font-bold">
                 Software Developer
               </div>
-              <p class="text-xs sm:text-sm text-center w-auto sm:w-[50%]">
+              <p class="text-sm text-center w-auto sm:w-[50%]">
                 I'm passionate about writing neat, efficient code to add
                 features like responsive layouts, API connections, and faster
                 performance.
@@ -276,7 +318,7 @@
                 alt=""
               />
               <div class="text-sm sm:text-base font-bold">Design</div>
-              <p class="text-xs sm:text-sm text-center w-auto sm:w-[50%]">
+              <p class="text-sm text-center w-auto sm:w-[50%]">
                 I enjoy creating organized content and user-friendly interfaces
                 tailored to my audience's needs.
               </p>
@@ -298,7 +340,7 @@
         </div>
       </div>
 
-      <!-- =============== Timeline =============== -->
+      <!-- =============== Timeline Tabbar =============== -->
 
       <!-- Tab bar -->
       <!-- <div class="flex gap-8 mb-12 sm:mb-16 justify-center mx-4  sm:mx-20  ">
@@ -322,25 +364,32 @@
         id="Education"
         class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
       >
-        <div class="mb-4 text-base sm:text-3xl tracking-tight font-bold">
+        <div class="mb-4 text-xl sm:text-3xl tracking-tight font-bold">
           Education
         </div>
         <div class="">
           <div
             class="scroll-slide-in-bottom opacity-0 border-b border-slate-200 pb-4 sm:pb-12 pt-4 sm:pt-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
           >
-            <img class="size-16 sm:size-24" src="../assets/nus.svg" alt="" />
+            <img class="size-16 sm:size-24" src="./assets/nus.svg" alt="" />
             <div class="text-left flex-1">
-              <span class="text-xs sm:text-sm font-normal">
+              <span class="text-sm font-normal">
                 Aug-2023 → Present
               </span>
               <div class="flex justify-between text-sm sm:text-base font-bold">
                 National University of Singapore
               </div>
-              <div class="pb-1 sm:pb-4 text-xs sm:text-sm">
+              <div class="pb-1 sm:pb-4 text-sm">
                 Master of Computing ( General Track )
               </div>
-              <p>Some description here..</p>
+              <p>
+                Essential courses covering software development, computing
+                systems, data structures and algorithms, enterprise systems,
+                fundamentals of artificial intelligence and data analytics.
+                Elective courses cover areas such as computing systems,
+                cybersecurity, data analytics, enterprise IT, financial
+                technology, robotics and software methodology.
+              </p>
             </div>
           </div>
 
@@ -352,19 +401,26 @@
             style="animation-delay: 0.2s !important"
             class="opacity-0 scroll-slide-in-bottom py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
           >
-            <img class="size-16 sm:size-24" src="../assets/cuc.svg" alt="" />
+            <img class="size-16 sm:size-24" src="./assets/cuc.svg" alt="" />
             <div class="text-left flex-1">
-              <span class="text-xs sm:text-sm font-normal">
+              <span class="text-sm font-normal">
                 Sep-2019 → Jun-2023
               </span>
               <div class="flex justify-between text-sm sm:text-base font-bold">
                 Communication University of China
               </div>
-              <div class="pb-1 sm:pb-4 text-xs sm:text-sm">
+              <div class="pb-1 sm:pb-4 text-sm">
                 Bachelor Degree of Digital Media of Art
               </div>
 
-              <p>Some description here..</p>
+              <p>
+                Learning multiple modules such as intelligent product design,
+                interaction design, new media technology, etc., with core
+                courses including innovative design thinking, introduction to
+                new media, artificial intelligence applications, human-computer
+                interaction technology and art, data visualization design, user
+                experience analysis, WEB front-end development, etc.
+              </p>
             </div>
           </div>
         </div>
@@ -374,7 +430,7 @@
         id="Internship"
         class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
       >
-        <div class="mb-4 text-base sm:text-3xl tracking-tight font-bold">
+        <div class="mb-4 text-xl sm:text-3xl tracking-tight font-bold">
           Internship
         </div>
         <div class=" ">
@@ -394,17 +450,24 @@
             </div>
 
             <div class="text-left flex-1">
-              <span class="text-xs sm:text-sm font-normal">
+              <span class="text-sm font-normal">
                 May 2022 - May 2023
               </span>
               <div class="flex justify-between text-sm sm:text-base font-bold">
                 Beijing Zhongjia Interactive Entertainment Co., Ltd.
               </div>
-              <div class="pb-1 sm:pb-4 text-xs sm:text-sm">
+              <div class="pb-1 sm:pb-4 text-sm">
                 Frontend Internship
               </div>
 
-              <p>Some description here..</p>
+              <p>
+                I collaborated closely with backend engineers to enable seamless
+                data interactions and dynamic information presentation. My
+                primary responsibilities centered around maintaining and
+                developing the front-end of mini-programs and the backend
+                management system. The technology stack I utilized included
+                React, Vue2, Vue3, TypeScript, Vben Admin, and UniApp.
+              </p>
             </div>
           </div>
 
@@ -418,21 +481,26 @@
           >
             <img
               class="size-16 sm:size-24"
-              src="../assets/Kinglead.svg"
+              src="./assets/kinglead.svg"
               alt=""
             />
             <div class="text-left flex-1">
-              <span class="text-xs sm:text-sm font-normal">
+              <span class="text-sm font-normal">
                 Dec 2022 - Jan 2023
               </span>
               <div class="flex justify-between text-sm sm:text-base font-bold">
                 Kinglead Company
               </div>
-              <div class="pb-1 sm:pb-4 text-xs sm:text-sm">
+              <div class="pb-1 sm:pb-4 text-sm">
                 Frontend Internship
               </div>
 
-              <p>Some description here..</p>
+              <p>
+                Responsible on implement new user interface for Kinglead’s
+                official website, and collaborated with backend developers to
+                implement new requirements for the campus training camp
+                registration website
+              </p>
             </div>
           </div>
         </div>
@@ -443,12 +511,10 @@
         id="Project"
         class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
       >
-        <div class="mb-4 text-base sm:text-3xl tracking-tight font-bold">
+        <div class="mb-4 text-xl sm:text-3xl tracking-tight font-bold">
           Project
         </div>
-        <p
-          class="scroll-fade-in opacity-0 text-xs sm:text-sm sm:w-[60%] mx-auto"
-        >
+        <p class="scroll-fade-in opacity-0 text-sm sm:w-[60%] mx-auto">
           This is a showcase of my work in a variety of field including Software
           Development and UI/UX design. For more insights into my other
           projects, feel free to explore my
@@ -466,7 +532,7 @@
       <div class="relative mx-4 sm:mx-20 ] mb-20">
         <div class="flex flex-col sm:flex-row gap-x-3">
           <div
-            class="hidden sm:block absolute -left-10 top-0 text-xs sm:text-sm flex-none w-8 text-center mb-4 sm:mb-0"
+            class="hidden sm:block absolute -left-10 top-0 text-sm flex-none w-8 text-center mb-4 sm:mb-0"
           >
             2024
           </div>
@@ -481,18 +547,33 @@
             </span>
           </div>
           <div
-            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 sm:mb:8 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 pl-6 sm:pl-12"
+            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 sm:mb:8 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
           >
-            <h2 class="text-base sm:text-xl font-bold relative tracking-tight">
-              Project title
-            </h2>
+            <div class="w-full flex sm:flex-row flex-col justify-between">
+              <h2
+                class="text-base sm:text-xl font-bold relative tracking-tight"
+              >
+                FootyDAO – Web3 football event APP
+              </h2>
+              <div class="animate-link">
+                <a href="https://footydao.xyz/">Link to website</a>
+              </div>
+            </div>
 
-            <div class="text-xs sm:text-sm py-4">project description</div>
+            <div class="text-sm py-4">
+              We developed a mobile and web application with React and Tailwind
+              CSS which enables cryptocurrency users to participate in football
+              games organized by FootyDAO at various Ethereum conferences
+              worldwide. To enhance the user experience on the website, we
+              provide opportunities for engagement, user can also explore and
+              stay up-to-date with the latest football events, including
+              upcoming matches.
+            </div>
             <div class="relative flex flex-wrap gap-2">
               <label
                 class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
               >
-                <img class="size-4 sm:size-5" src="../assets/react.svg" alt />
+                <img class="size-4 sm:size-5" src="./assets/react.svg" alt />
                 <span class="text-xs">React</span>
               </label>
               <label
@@ -500,7 +581,7 @@
               >
                 <img
                   class="size-4 sm:size-5"
-                  src="../assets/tailwindcss.svg"
+                  src="./assets/tailwindcss.svg"
                   alt
                 />
                 <span class="text-xs">TailwindCSS</span>
@@ -521,26 +602,41 @@
           </div>
           <div
             style="animation-delay: 0.2s"
-            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 sm:mb:8 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 pl-6 sm:pl-12"
+            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 sm:mb:8 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12""
           >
             <h2 class="text-base sm:text-xl font-bold relative tracking-tight">
-              Project title
+              Buqi Script Murder Game Smartphone APP
             </h2>
 
-            <div class="text-xs sm:text-sm py-4">project description</div>
+            <div class="text-sm py-4">
+              "Buqi app" is an online platform based on WeChat mini-programs,
+              specializing in murder mystery games. It was built with Vue.js,
+              uniapp and TailwindCSS. I was responsible for the development of
+              modules such as scripts, stores, and event publishing in the
+              application. Considering potential slow responses of certain
+              interfaces during high traffic periods, a preloading solution with
+              localStorage data caching is used to enhance performance.
+            </div>
             <div class="relative flex flex-wrap gap-2">
               <label
                 class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
               >
-                <img class="size-4 sm:size-5" src="../assets/react.svg" alt />
-                <span class="text-xs">React</span>
+                <img class="size-4 sm:size-5" src="./assets/vue.svg" alt />
+                <span class="text-xs">Vue</span>
               </label>
+              <label
+                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+              >
+                <img class="size-4 sm:size-5" src="./assets/uniapp.jpg" alt />
+                <span class="text-xs">Uniapp</span>
+              </label>
+
               <label
                 class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
               >
                 <img
                   class="size-4 sm:size-5"
-                  src="../assets/tailwindcss.svg"
+                  src="./assets/tailwindcss.svg"
                   alt
                 />
                 <span class="text-xs">TailwindCSS</span>
@@ -556,149 +652,10 @@
       class="fixed transition-all duration-500 -bottom-[10%] right-10"
       id="scroll-up"
     >
-      <img class="size-10" src="/assets/arrowUp.svg" alt="" />
+      <img class="size-10" src="./assets/arrowUp.svg" alt="" />
     </a>
   </body>
+
+  <script type="text/javascript" src="./index.js"></script>
 </html>
 
-<script>
-  /*==================== QUALIFICATION TABS ====================*/
-  const tabs = document.querySelectorAll("[data-target]"),
-    tabContents = document.querySelectorAll("[data-content]");
-
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      const target = document.querySelector(tab.dataset.target);
-      console.log(target);
-
-      tabContents.forEach((tabContent) => {
-        tabContent.classList.add("hidden");
-      });
-      target.classList.remove("hidden");
-
-      tabs.forEach((tab) => {
-        tab.classList.remove("bg-violet-100", "text-violet-500");
-        console.log(tab.classList);
-      });
-      tab.classList.add("bg-violet-100", "text-violet-500");
-    });
-  });
-
-  /*==================== Scroll Up ====================*/
-  function scrollUp() {
-    const scrollUp = document.getElementById("scroll-up");
-    // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-top class
-    if (this.scrollY >= 560) scrollUp.classList.add("bottom-[10%]");
-    else scrollUp.classList.remove("bottom-[10%]");
-  }
-  window.addEventListener("scroll", scrollUp);
-
-  /*==================== Scroll Down Trigger Animation ====================*/
-  // Create the observer
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        if (entry.target.classList.contains("scroll-slide-in-right")) {
-          entry.target.classList.add("animate-slide-in-right");
-        } else if (entry.target.classList.contains("scroll-slide-in-left")) {
-          entry.target.classList.add("animate-slide-in-left");
-        } else if (
-          entry.target.classList.contains("scroll-slide-in-right-100")
-        ) {
-          entry.target.classList.add("animate-slide-in-right-100");
-        } else if (
-          entry.target.classList.contains("scroll-slide-in-left-100")
-        ) {
-          entry.target.classList.add("animate-slide-in-left-100");
-        } else if (entry.target.classList.contains("scroll-slide-in-bottom")) {
-          entry.target.classList.add("animate-slide-in-bottom");
-        } else if (entry.target.classList.contains("scroll-fade-in")) {
-          entry.target.classList.add("animate-fade-in");
-        }
-        setTimeout(() => {
-          entry.target.classList.remove("opacity-0");
-        }, 1000);
-      }
-    });
-  });
-
-  // Tell the observer which elements to track
-  const slideInLeftElem = document.querySelectorAll(".scroll-slide-in-left");
-  const slideInRightElem = document.querySelectorAll(".scroll-slide-in-right");
-  const slideInRight100Elem = document.querySelectorAll(
-    ".scroll-slide-in-right-100",
-  );
-  const slideInLeft100Elem = document.querySelectorAll(
-    ".scroll-slide-in-left-100",
-  );
-  const slideInBottomElem = document.querySelectorAll(
-    ".scroll-slide-in-bottom",
-  );
-  const fadeInElem = document.querySelectorAll(".scroll-fade-in");
-  slideInLeftElem.forEach((element) => observer.observe(element));
-  slideInRightElem.forEach((element) => observer.observe(element));
-  slideInBottomElem.forEach((element) => observer.observe(element));
-  slideInLeft100Elem.forEach((element) => observer.observe(element));
-  slideInRight100Elem.forEach((element) => observer.observe(element));
-  fadeInElem.forEach((element) => observer.observe(element));
-
-  // Typing Animation
-  var TxtType = function (el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
-    this.txt = "";
-    this.tick();
-    this.isDeleting = false;
-  };
-
-  TxtType.prototype.tick = function () {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-
-    if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    this.el.innerHTML = '<span class="wrap">' + this.txt + "</span>";
-
-    var that = this;
-    var delta = 200 - Math.random() * 100;
-
-    if (this.isDeleting) {
-      delta /= 2;
-    }
-
-    if (!this.isDeleting && this.txt === fullTxt) {
-      delta = this.period;
-      this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === "") {
-      this.isDeleting = false;
-      this.loopNum++;
-      delta = 500;
-    }
-
-    setTimeout(function () {
-      that.tick();
-    }, delta);
-  };
-
-  window.onload = function () {
-    var elements = document.getElementsByClassName("typewrite");
-    for (var i = 0; i < elements.length; i++) {
-      var toRotate = elements[i].getAttribute("data-type");
-      var period = elements[i].getAttribute("data-period");
-      if (toRotate) {
-        new TxtType(elements[i], JSON.parse(toRotate), period);
-      }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    document.body.appendChild(css);
-  };
-</script>

@@ -5,3 +5,81 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Hamburger menu animation */
+.mobile-btn {
+  color: #ccc;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-top: 4px solid;
+  float: right;
+  position: relative;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+}
+
+.mobile-btn::before,
+.mobile-btn::after {
+  content: "";
+  display: block;
+  height: 4px;
+  margin-top: 4px;
+  background: currentColor;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.mobile-btn.active {
+  border-top-color: transparent;
+}
+
+.mobile-btn.active::before {
+  margin-top: 0px;
+  top: 6px;
+  transform: rotate(135deg);
+}
+
+.mobile-btn.active::after {
+  margin-top: 0px;
+  top: 2px;
+  transform: rotate(45deg);
+}
+
+.menu-left {
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+}
+
+.menu-left.active {
+  max-height: 30em;
+  transition: max-height 0.3s ease-in;
+}
+
+/* link hover effect */
+.animate-link a {
+  position: relative;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.animate-link a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: rgb(109 40 217);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+.animate-link a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
