@@ -113,9 +113,30 @@ window.onload = function () {
 //MOBILE-MENU
 const button = document.querySelector(".mobile-btn");
 const menu = document.querySelector(".mobile-menu");
+const menuLink = document.querySelectorAll(".mobile-menu a");
+console.log("menu", menuLink);
+
 // TOGGLE HAMBURGER & COLLAPSE NAV
 button.addEventListener("click", () => {
   console.log(menu);
   button.classList.toggle("active");
   menu.classList.toggle("active");
+});
+
+// REMOVE X & COLLAPSE NAV ON ON CLICK
+menuLink.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    // Prevent the default navigation behavior
+    // event.preventDefault();
+
+    // // Log the href attribute of the clicked link
+    console.log(link.getAttribute("href"));
+
+    button.classList.remove("active");
+    menu.classList.remove("active");
+
+    // Collapse the menu
+    // button.classList.remove("active");
+    // menu.classList.remove("active");
+  });
 });

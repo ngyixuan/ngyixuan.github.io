@@ -7,6 +7,7 @@
     <meta name="description" content="ngyixuan personal website" />
     <meta name="author" content="ngyixuan" />
     <title>Hina's website</title>
+    <link rel="shortcut icon" href="./assets/avatar.svg" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
@@ -29,20 +30,17 @@
     <header
       class="sticky top-0 z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 bg-white/85 supports-backdrop-blur:bg-white/60"
     >
-      <div
-        class="max-w-8xl mx-auto py-4 border-b border-slate-200 sm:px-8 px-4"
-      >
-        <nav
-          class="relative flex flex-wrap justify-between items-center w-full"
-        >
-          <div class="">
-            <a href="#" class="text-base">Hina's website</a>
+      <div class="relative py-4 border-b border-slate-200">
+        <nav class="flex flex-wrap justify-between items-center w-full">
+          <div class="pl-4">
+            <a href="#" class="text-xl">Hina's website</a>
+          </div>
+          <div class="pr-4">
+            <span class="md:hidden mobile-btn"></span>
           </div>
 
-          <span class="lg:hidden mobile-btn"></span>
-
           <div
-            class="hidden md:flex md:items-center md:w-auto"
+            class="hidden md:flex md:items-center md:w-auto pr-4"
             id="desktop-menu"
           >
             <ul class="flex justify-between space-x-8">
@@ -69,20 +67,21 @@
                 >
               </li>
               <li>
-                <a
-                  href="#Project"
-                  class="hover:text-violet-500 block my-4 lg:my-0"
+                <a href="#Project" class="hover:text-violet-500 block"
                   >Projects</a
                 >
               </li>
             </ul>
           </div>
-          <div class="w-full md:hidden" id="mobile-menu">
+          <div
+            class="absolute top-10 w-full md:hidden backdrop-blur flex-none transition-colors duration-500 lg:z-50 bg-white/95 supports-backdrop-blur:bg-white/6"
+            id="mobile-menu"
+          >
             <div class="">
               <ul
-                class="flex flex-col items-center justify-center gap-8 text-center text-base menu-left mobile-menu"
+                class="flex flex-col items-center justify-center gap-8 text-center text-xl menu-left mobile-menu"
               >
-                <div class="h-12 w-full"></div>
+                <div class="h-6 w-full"></div>
                 <li>
                   <a href="#" class="hover:text-violet-500 block">Home</a>
                 </li>
@@ -118,23 +117,21 @@
     </header>
     <main id="home" class="box-border">
       <div
-        class="relative bg-violet-100 flex gap-2 flex-col max-w-[52rem] sm:max-w-[100%] align-middle min-h-[100vh]"
+        class="relative bg-violet-100 flex gap-2 flex-col sm:max-w-[100%] align-middle min-h-[100vh]"
       >
         <!-- =============== Welcome =============== -->
 
         <div
-          class="mb-10 pt-10 sm:pt-20 grid grid-rows-2 sm:grid-cols-2 mx-4 sm:mx-20 mt-4 sm:mt-10"
+          class="mb-10 pt-10 sm:pt-20 grid grid-rows-2 sm:grid-cols-2 sm:mx-20 mt-4 sm:mt-10"
         >
           <div
             class="scroll-slide-in-left opacity-0 place-self-center sm:place-self-start order-last sm:order-first text-center sm:text-left"
           >
             <div
-              class="relative w-[max-content] pt-4 sm:pt-0 text-sm sm:text-xl tracking-tight pb-1"
+              class="relative w-[max-content] mx-auto sm:mx-0 pt-4 sm:pt-0 text-sm sm:text-xl tracking-tight pb-1"
             >
-              <span class="">
-                Hi. I am Ng Yi Xuan. You can call me Hina.
-                <i class="uil uil-smile-squint-wink"></i
-              ></span>
+              Hi. I am Ng Yi Xuan. You can call me Hina.
+              <i class="uil uil-smile-squint-wink"></i>
             </div>
             <div class="text-2xl sm:text-4xl pb-2 sm:pb-4">
               I'm a
@@ -373,9 +370,7 @@
           >
             <img class="size-16 sm:size-24" src="./assets/nus.svg" alt="" />
             <div class="text-left flex-1">
-              <span class="text-sm font-normal">
-                Aug-2023 → Present
-              </span>
+              <span class="text-sm font-normal"> Aug-2023 → Present </span>
               <div class="flex justify-between text-sm sm:text-base font-bold">
                 National University of Singapore
               </div>
@@ -403,9 +398,7 @@
           >
             <img class="size-16 sm:size-24" src="./assets/cuc.svg" alt="" />
             <div class="text-left flex-1">
-              <span class="text-sm font-normal">
-                Sep-2019 → Jun-2023
-              </span>
+              <span class="text-sm font-normal"> Sep-2019 → Jun-2023 </span>
               <div class="flex justify-between text-sm sm:text-base font-bold">
                 Communication University of China
               </div>
@@ -450,15 +443,11 @@
             </div>
 
             <div class="text-left flex-1">
-              <span class="text-sm font-normal">
-                May 2022 - May 2023
-              </span>
+              <span class="text-sm font-normal"> May 2022 - May 2023 </span>
               <div class="flex justify-between text-sm sm:text-base font-bold">
                 Beijing Zhongjia Interactive Entertainment Co., Ltd.
               </div>
-              <div class="pb-1 sm:pb-4 text-sm">
-                Frontend Internship
-              </div>
+              <div class="pb-1 sm:pb-4 text-sm">Frontend Internship</div>
 
               <p>
                 I collaborated closely with backend engineers to enable seamless
@@ -485,15 +474,11 @@
               alt=""
             />
             <div class="text-left flex-1">
-              <span class="text-sm font-normal">
-                Dec 2022 - Jan 2023
-              </span>
+              <span class="text-sm font-normal"> Dec 2022 - Jan 2023 </span>
               <div class="flex justify-between text-sm sm:text-base font-bold">
                 Kinglead Company
               </div>
-              <div class="pb-1 sm:pb-4 text-sm">
-                Frontend Internship
-              </div>
+              <div class="pb-1 sm:pb-4 text-sm">Frontend Internship</div>
 
               <p>
                 Responsible on implement new user interface for Kinglead’s
@@ -600,48 +585,46 @@
             >
             </span>
           </div>
-          <div
-            style="animation-delay: 0.2s"
-            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 sm:mb:8 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12""
-          >
-            <h2 class="text-base sm:text-xl font-bold relative tracking-tight">
-              Buqi Script Murder Game Smartphone APP
-            </h2>
+          <div style="animation-delay: 0.2s" class="opacity-0
+          scroll-slide-in-right group relative flex-1 mb-4 sm:mb:8 rounded-lg
+          border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"" >
+          <h2 class="text-base sm:text-xl font-bold relative tracking-tight">
+            Buqi Script Murder Game Smartphone APP
+          </h2>
 
-            <div class="text-sm py-4">
-              "Buqi app" is an online platform based on WeChat mini-programs,
-              specializing in murder mystery games. It was built with Vue.js,
-              uniapp and TailwindCSS. I was responsible for the development of
-              modules such as scripts, stores, and event publishing in the
-              application. Considering potential slow responses of certain
-              interfaces during high traffic periods, a preloading solution with
-              localStorage data caching is used to enhance performance.
-            </div>
-            <div class="relative flex flex-wrap gap-2">
-              <label
-                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
-              >
-                <img class="size-4 sm:size-5" src="./assets/vue.svg" alt />
-                <span class="text-xs">Vue</span>
-              </label>
-              <label
-                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
-              >
-                <img class="size-4 sm:size-5" src="./assets/uniapp.jpg" alt />
-                <span class="text-xs">Uniapp</span>
-              </label>
+          <div class="text-sm py-4">
+            "Buqi app" is an online platform based on WeChat mini-programs,
+            specializing in murder mystery games. It was built with Vue.js,
+            uniapp and TailwindCSS. I was responsible for the development of
+            modules such as scripts, stores, and event publishing in the
+            application. Considering potential slow responses of certain
+            interfaces during high traffic periods, a preloading solution with
+            localStorage data caching is used to enhance performance.
+          </div>
+          <div class="relative flex flex-wrap gap-2">
+            <label
+              class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+            >
+              <img class="size-4 sm:size-5" src="./assets/vue.svg" alt />
+              <span class="text-xs">Vue</span>
+            </label>
+            <label
+              class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+            >
+              <img class="size-4 sm:size-5" src="./assets/uniapp.jpg" alt />
+              <span class="text-xs">Uniapp</span>
+            </label>
 
-              <label
-                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
-              >
-                <img
-                  class="size-4 sm:size-5"
-                  src="./assets/tailwindcss.svg"
-                  alt
-                />
-                <span class="text-xs">TailwindCSS</span>
-              </label>
-            </div>
+            <label
+              class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+            >
+              <img
+                class="size-4 sm:size-5"
+                src="./assets/tailwindcss.svg"
+                alt
+              />
+              <span class="text-xs">TailwindCSS</span>
+            </label>
           </div>
         </div>
       </div>
@@ -658,4 +641,3 @@
 
   <script type="text/javascript" src="./index.js"></script>
 </html>
-
