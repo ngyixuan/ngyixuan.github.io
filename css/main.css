@@ -60,7 +60,6 @@ html {
 /* link hover effect */
 .animate-link a {
   position: relative;
-  font-weight: bold;
   text-decoration: none;
   display: inline-block;
   padding-bottom: 5px;

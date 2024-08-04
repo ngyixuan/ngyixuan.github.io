@@ -1,3 +1,4 @@
+window.initFlowbite();
 /*==================== Scroll Up ====================*/
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
@@ -139,4 +140,20 @@ menuLink.forEach((link) => {
     // button.classList.remove("active");
     // menu.classList.remove("active");
   });
+});
+
+const clipboard = FlowbiteInstances.getInstance("CopyClipboard", "copy-email");
+console.log(clipboard);
+const $defaultMessage = document.getElementById("default-message");
+const $successMessage = document.getElementById("success-message");
+
+clipboard.updateOnCopyCallback((clipboard) => {
+  $defaultMessage.classList.add("hidden");
+  $successMessage.classList.remove("hidden");
+
+  // reset to default state
+  setTimeout(() => {
+    $defaultMessage.classList.remove("hidden");
+    $successMessage.classList.add("hidden");
+  }, 2000);
 });

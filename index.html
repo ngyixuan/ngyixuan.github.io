@@ -12,7 +12,10 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
     />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
     <!-- tailwind css -->
     <link href="./css/output.css" rel="stylesheet" />
 
@@ -45,13 +48,6 @@
           >
             <ul class="flex justify-between space-x-8">
               <li>
-                <a href="#" class="hover:text-violet-500 block">Home</a>
-              </li>
-
-              <li>
-                <a href="#About" class="hover:text-violet-500 block">About</a>
-              </li>
-              <li>
                 <a href="#Expertise" class="hover:text-violet-500 block"
                   >Expertise</a
                 >
@@ -83,13 +79,6 @@
               >
                 <div class="h-6 w-full"></div>
                 <li>
-                  <a href="#" class="hover:text-violet-500 block">Home</a>
-                </li>
-
-                <li>
-                  <a href="#About" class="hover:text-violet-500 block">About</a>
-                </li>
-                <li>
                   <a href="#Expertise" class="hover:text-violet-500 block"
                     >Expertise</a
                   >
@@ -115,25 +104,25 @@
         </nav>
       </div>
     </header>
-    <main id="home" class="box-border">
+    <main id="home" class="flex flex-col justify-center items-center">
       <div
-        class="relative bg-violet-100 flex gap-2 flex-col sm:max-w-[100%] align-middle min-h-[100vh]"
+        class="relative bg-violet-100 flex gap-2 flex-col items-center justify-center w-full min-h-[100vh]"
       >
         <!-- =============== Welcome =============== -->
 
         <div
-          class="mb-10 pt-10 sm:pt-20 grid grid-rows-2 sm:grid-cols-2 sm:mx-20 mt-4 sm:mt-10"
+          class="max-w-[1400px] grid grid-rows-2 grid-cols-1 sm:grid-cols-2 sm:grid-rows-1"
         >
           <div
-            class="scroll-slide-in-left opacity-0 place-self-center sm:place-self-start order-last sm:order-first text-center sm:text-left"
+            class="flex flex-col gap-4 scroll-slide-in-left opacity-0 place-self-center sm:place-self-start order-last sm:order-first text-center sm:text-left"
           >
             <div
-              class="relative w-[max-content] mx-auto sm:mx-0 pt-4 sm:pt-0 text-sm sm:text-xl tracking-tight pb-1"
+              class="relative w-[max-content] mx-auto sm:mx-0 pt-4 sm:pt-0 text-sm sm:text-2xl tracking-tight pb-1"
             >
               Hi. I am Ng Yi Xuan. You can call me Hina.
               <i class="uil uil-smile-squint-wink"></i>
             </div>
-            <div class="text-2xl sm:text-4xl pb-2 sm:pb-4">
+            <div class="text-2xl sm:text-5xl text-nowrap pb-2 sm:pb-4">
               I'm a
               <a
                 href=""
@@ -143,59 +132,61 @@
               >
                 <span class="wrap"></span>
               </a>
-              <!-- <span class="font-semibold text-violet-600"
-                >Front-end web developer & UX/UI designer.
-              </span> -->
             </div>
-            <div>
-              <p class="text-sm">
-                Welcome! It's great to have you here. I’m a front-end web
-                developer and UX/UI designer from Malaysia. As the realm of
-                development and design undergoes continuous evolution, I remain
-                dedicated to learning and honing my skills every day. I’m still
-                learning and building my skills everyday. Feel free to contact
-                me!
-              </p>
+
+            <div class="text-sm sm:text-xl">
+              Welcome! It's great to have you here. I’m a front-end web
+              developer and UX/UI designer from Malaysia. I’m still looking for
+              a full-time frontend developer job. Feel free to contact me !
             </div>
 
             <div class="pt-4 flex gap-4 justify-center sm:justify-start">
               <a
-                class="duration-300 hover:text-violet-500 text-3xl"
-                href="https://www.linkedin.com/in/ng-yi-xuan-735878227/"
-                target="_blank"
+                href="/file/NG YI XUAN_SG.pdf"
+                download
+                class="cursor-pointer scroll-fade-in opacity-0 duration-300 bg-black text-white py-3 px-4 rounded-lg items-center relative inline-flex text-xs sm:text-sm font-semibold hover:bg-violet-500"
               >
-                <i class="uil uil-linkedin"></i>
+                Download CV
               </a>
-              <a
-                class="duration-300 hover:text-violet-500 text-3xl"
-                href="mailto:ngyixuan2009@gmail.com"
-                target="_blank"
+              <input
+                id="copy-email"
+                type="text"
+                value="ngyixuan2009@gmail.com"
+                class="hidden"
+                readonly
+              />
+              <button
+                data-copy-to-clipboard-target="copy-email"
+                class="cursor-pointer scroll-fade-in opacity-0 duration-300 border-black py-3 px-4 border-2 rounded-lg items-center relative inline-flex text-xs sm:text-sm font-semibold hover:text-violet-500 hover:border-violet-500"
               >
-                <i class="uil uil-envelope-alt"></i>
-              </a>
-              <a
-                class="duration-300 hover:text-violet-500 text-3xl"
-                href="https://github.com/ngyixuan"
-                target="_blank"
-              >
-                <i class="uil uil-github"></i>
-              </a>
-              <a
-                class="duration-300 hover:text-violet-500 text-3xl"
-                href="https://github.com/ngyixuan"
-                target="_blank"
-              >
-                <i class="uil uil-instagram"></i>
-              </a>
+                <span id="default-message">Copy Email</span>
+                <span
+                  id="success-message"
+                  class="hidden inline-flex items-center"
+                >
+                  <svg
+                    class="w-3 h-3 text-black me-1.5"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 16 12"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M1 5.917 5.724 10.5 15 1.5"
+                    />
+                  </svg>
+                  Copied
+                </span>
+              </button>
             </div>
           </div>
 
-          <div class="scroll-slide-in-right opacity-0 place-content-start">
-            <img
-              class="mx-auto block size-64"
-              src="./assets/avatar.svg"
-              alt=""
-            />
+          <div class="scroll-slide-in-right opacity-0 place-self-end">
+            <img class="block size-64" src="./assets/avatar.svg" alt="" />
           </div>
           <a
             href="#About"
@@ -205,49 +196,14 @@
         </div>
       </div>
 
-      <!-- =============== About =============== -->
-
-      <div
-        id="About"
-        class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[80%] mx-auto px-4 sm:px-20"
-      >
-        <div class="mb-4 text-xl sm:text-3xl tracking-tight font-bold">
-          About Me
-        </div>
-        <p class="scroll-fade-in opacity-0 text-sm">
-          I am a Computer Science Graduate Student at the National University of
-          Singapore, passionate about problem-solving and coding. I consistently
-          strive to deliver excellence in every task I undertake. Throughout my
-          bachelor's and graduate studies, I have gained proficiency in a range
-          of technologies including React, Vue, JavaScript, Python, Java, MySQL,
-          and PostgreSQL. With two years of project and work experience, I have
-          honed my skills and developed a strong foundation. My passion lies in
-          crafting sophisticated applications that address real-world challenges
-          and make a meaningful impact on millions of users. Looking for an
-          opportunity to work in a challenging position combining my skills in
-          Software Engineering, which provides professional development,
-          interesting experiences and personal growth.
-        </p>
-        <a
-          href="/file/NG YI XUAN_SG.pdf"
-          download
-          class="scroll-fade-in opacity-0 mt-4 sm:mt-10 duration-300 border-black px-4 border-2 rounded-lg items-center relative inline-flex gap-x-2 text-xs sm:text-sm font-semibold hover:bg-transparent hover:text-violet-500 hover:border-violet-500"
-        >
-          Download full resume
-          <i class="text-3xl uil uil-folder-download"></i>
-        </a>
-      </div>
-
       <!-- =============== Expertise =============== -->
       <div
         id="Expertise"
-        class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
+        class="pt-32 sm:text-center max-w-[52rem] sm:max-w-[1400px]"
       >
-        <div class="mb-4 text-xl sm:text-3xl tracking-tight font-bold">
-          Expertise
-        </div>
+        <div class="py-20 text-xl sm:text-3xl font-bold">Expertise</div>
         <div
-          class="scroll-slide-in-right-100 opacity-0 border-slate-200 border my-4 sm:mb:8 rounded-lg sm:rounded-xl py-4 sm:py-12 px-4 sm:px-8"
+          class="w-full scroll-slide-in-right-100 opacity-0 border-slate-200 border mb-4 sm:mb-10 py-4 sm:py-12 px-4 sm:px-8 rounded-lg sm:rounded-xl"
         >
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div
@@ -258,9 +214,7 @@
                 src="./assets/developer.svg"
                 alt=""
               />
-              <div class="text-sm sm:text-base font-bold">
-                Software Developer
-              </div>
+              <div class="text-sm sm:text-base font-bold">Web Development</div>
               <p class="text-sm text-center w-auto sm:w-[50%]">
                 I'm passionate about writing neat, efficient code to add
                 features like responsive layouts, API connections, and faster
@@ -268,44 +222,107 @@
               </p>
             </div>
             <div class="grid gap-4 sm:gap-8 grid-cols-4 sm:grid-cols-6">
-              <!-- todo tooltip -->
-              <img class="size-10 sm:size-16" src="./assets/html.svg" alt="" />
-              <img class="size-10 sm:size-16" src="./assets/css.svg" alt="" />
-              <img
-                class="size-10 sm:size-16"
-                src="./assets/javascript.svg"
-                alt=""
-              />
-              <img
-                class="size-10 sm:size-16"
-                src="./assets/typescript.svg"
-                alt=""
-              />
-              <img
-                class="size-10 sm:size-16"
-                src="./assets/bootstrap.svg"
-                alt=""
-              />
-              <img
-                class="size-10 sm:size-16"
-                src="./assets/nodejs.svg"
-                alt=""
-              />
-              <img class="size-10 sm:size-16" src="./assets/react.svg" alt="" />
-              <img class="size-10 sm:size-16" src="./assets/vue.svg" alt="" />
-              <img class="size-10 sm:size-16" src="./assets/git.svg" alt="" />
-              <img class="size-10 sm:size-16" src="./assets/java.svg" alt="" />
-              <img
-                class="size-10 sm:size-16"
-                src="./assets/python.svg"
-                alt=""
-              />
-              <img class="size-10 sm:size-16" src="./assets/mysql.svg" alt="" />
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/html.svg"
+                  alt=""
+                />
+                <span> HTML </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/css.svg"
+                  alt=""
+                />
+                <span> CSS </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/javascript.svg"
+                  alt=""
+                />
+                <span> JavaScript </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/typescript.svg"
+                  alt=""
+                />
+                <span> TypeScript </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/tailwindcss.svg"
+                  alt=""
+                />
+                <span> TailwindCSS </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/nextjs.svg"
+                  alt=""
+                />
+                <span> Next.js </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/nodejs.svg"
+                  alt=""
+                />
+                <span> Node.js </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/react.svg"
+                  alt=""
+                />
+                <span> React </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/vue.svg"
+                  alt=""
+                />
+                <span> Vue </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/python.svg"
+                  alt=""
+                />
+                <span> Python </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/mysql.svg"
+                  alt=""
+                />
+                <span> MySQL </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/git.svg"
+                  alt=""
+                />
+                <span> Git </span>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="scroll-slide-in-left-100 opacity-0 border-slate-200 border my-4 sm:mb:8 rounded-lg sm:rounded-xl py-4 sm:py-12 px-4 sm:px-8"
+          class="w-full scroll-slide-in-right-100 opacity-0 border-slate-200 border mb-4 sm:mb-10 py-4 sm:py-12 px-4 sm:px-8 rounded-lg sm:rounded-xl"
         >
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
             <div class="flex gap-4 flex-col justify-center items-center">
@@ -321,52 +338,46 @@
               </p>
             </div>
             <div class="grid gap-4 sm:gap-8 grid-cols-4 sm:grid-cols-6">
-              <img
-                class="size-10 sm:size-16"
-                src="./assets/photoshop.svg"
-                alt=""
-              />
-              <img
-                class="size-10 sm:size-16"
-                src="./assets/illustrator.svg"
-                alt=""
-              />
-              <img class="size-10 sm:size-16" src="./assets/figma.svg" alt="" />
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/figma.svg"
+                  alt=""
+                />
+                <span> Figma </span>
+              </div>
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/photoshop.svg"
+                  alt=""
+                />
+                <span> Photoshop </span>
+              </div>
+
+              <div class="grid grid-rows-2 items-center justify-center">
+                <img
+                  class="size-10 sm:size-16 place-self-center"
+                  src="./assets/illustrator.svg"
+                  alt=""
+                />
+                <span> Illustrator </span>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- =============== Timeline Tabbar =============== -->
-
-      <!-- Tab bar -->
-      <!-- <div class="flex gap-8 mb-12 sm:mb-16 justify-center mx-4  sm:mx-20  ">
-
-      <div
-        class="inline-flex gap-2 bg-violet-100 text-violet-500 rounded-full px-4 py-1 mx-2 items-center text-sm sm:text-base cursor-pointer font-semibold hover:text-violet-500"
-        data-target="#Education">
-        <i class="uil uil-graduation-cap"></i>
-
-        Education
-      </div>
-      <div
-        class="inline-flex gap-2 rounded-full px-4 py-1 mx-2 items-center text-sm sm:text-base cursor-pointer  hover:text-violet-500"
-        data-target="#Internship">
-        <i class="uil uil-suitcase"></i> Internship
-      </div> -->
-
       <!-- =============== Education =============== -->
 
       <div
         id="Education"
-        class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
+        class="pt-32 sm:text-center max-w-[52rem] sm:max-w-[1400px]"
       >
-        <div class="mb-4 text-xl sm:text-3xl tracking-tight font-bold">
-          Education
-        </div>
+        <div class="py-20 text-xl sm:text-3xl font-bold">Education</div>
         <div class="">
           <div
-            class="scroll-slide-in-bottom opacity-0 border-b border-slate-200 pb-4 sm:pb-12 pt-4 sm:pt-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
+            class="scroll-slide-in-bottom opacity-0 border-b border-slate-200 py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
           >
             <img class="size-16 sm:size-24" src="./assets/nus.svg" alt="" />
             <div class="text-left flex-1">
@@ -387,14 +398,9 @@
               </p>
             </div>
           </div>
-
-          <!-- <div class="">
-          <span class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center">
-          </span>
-        </div> -->
           <div
             style="animation-delay: 0.2s !important"
-            class="opacity-0 scroll-slide-in-bottom py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
+            class="scroll-slide-in-bottom opacity-0 py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
           >
             <img class="size-16 sm:size-24" src="./assets/cuc.svg" alt="" />
             <div class="text-left flex-1">
@@ -421,20 +427,80 @@
       <!-- =============== Internship =============== -->
       <div
         id="Internship"
-        class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
+        class="w-full pt-32 sm:text-center max-w-[52rem] sm:max-w-[1400px]"
       >
-        <div class="mb-4 text-xl sm:text-3xl tracking-tight font-bold">
-          Internship
-        </div>
-        <div class=" ">
-          <!-- <div class="">
-              <span class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center">
-              </span>
-              <span class="h-[100%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]">
-              </span>
-            </div> -->
+        <div class="py-20 text-xl sm:text-3xl font-bold">Internship</div>
+
+        <div class="">
           <div
-            class="scroll-slide-in-bottom opacity-0 border-b border-slate-200 pb-4 sm:pb-12 pt-4 sm:pt-12 flex flex-col sm:flex-row gap-1 sm:gap-4"
+            class="scroll-slide-in-bottom opacity-0 border-b border-slate-200 py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
+          >
+            <div
+              class="flex justify-center items-center size-16 sm:size-24 bg-[#5A5EAA] rounded-full"
+            >
+              <img
+                class="size-10 sm:size-16"
+                src="./assets/quantum3labs.svg"
+                alt=""
+              />
+            </div>
+
+            <div class="text-left flex-1">
+              <span class="text-sm font-normal"> Jan 2024 - Present </span>
+              <div class="flex justify-between text-sm sm:text-base font-bold">
+                Quantum3 Labs
+              </div>
+              <div class="pb-1 sm:pb-4 text-sm">
+                Web3 Front-End Intern + UI/UX Designer
+              </div>
+
+              <div>
+                <li>
+                  Building company websites and several DeFi lending platform,
+                  moving fluidly between multiple active projects, contribute to
+                  github open-source project and starknet community
+                </li>
+                <li>
+                  Migrate web3 library (Wagmi, Viem, RainbowKit, TanStack Query)
+                  from older version to newest version, ensuring improved
+                  performance and functionality
+                </li>
+                <li>
+                  Involved in designing UI/UX wireframes and prototypes by using
+                  Figma
+                </li>
+              </div>
+            </div>
+          </div>
+          <div
+            style="animation-delay: 0.2s !important"
+            class="scroll-slide-in-bottom opacity-0 border-b border-slate-200 py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
+          >
+            <img
+              class="size-16 sm:size-24"
+              src="./assets/kinglead.svg"
+              alt=""
+            />
+            <div class="text-left flex-1">
+              <span class="text-sm font-normal"> Dec 2022 - Jan 2023 </span>
+              <div class="flex justify-between text-sm sm:text-base font-bold">
+                Kinglead (北京京领教育科技有限公司)
+              </div>
+              <div class="pb-1 sm:pb-4 text-sm">Front-End Intern</div>
+
+              <div>
+                <li>
+                  Develop responsive HTML pages for Kinglead’s official website
+                  from mockups and visual wireframes, upload webpage to server
+                  for new releases .
+                </li>
+                <li>Worked closely with backend and UI/UX designer.</li>
+              </div>
+            </div>
+          </div>
+          <div
+            style="animation-delay: 0.2s !important"
+            class="scroll-slide-in-bottom opacity-0 border-b border-slate-200 py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
           >
             <div
               class="flex justify-center items-center size-16 sm:size-24 bg-slate-200 rounded-full"
@@ -445,47 +511,25 @@
             <div class="text-left flex-1">
               <span class="text-sm font-normal"> May 2022 - May 2023 </span>
               <div class="flex justify-between text-sm sm:text-base font-bold">
-                Beijing Zhongjia Interactive Entertainment Co., Ltd.
+                Beijing Zhongjia Interactive Entertainment Co. Ltd.
+                (北京中嘉互娱有限公司)
               </div>
-              <div class="pb-1 sm:pb-4 text-sm">Frontend Internship</div>
+              <div class="pb-1 sm:pb-4 text-sm">Uniapp Front-End Intern</div>
 
-              <p>
-                I collaborated closely with backend engineers to enable seamless
-                data interactions and dynamic information presentation. My
-                primary responsibilities centered around maintaining and
-                developing the front-end of mini-programs and the backend
-                management system. The technology stack I utilized included
-                React, Vue2, Vue3, TypeScript, Vben Admin, and UniApp.
-              </p>
-            </div>
-          </div>
-
-          <!-- <div class="">
-              <span class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center">
-              </span>
-            </div> -->
-          <div
-            style="animation-delay: 0.2s !important"
-            class="opacity-0 scroll-slide-in-bottom py-4 sm:py-12 flex flex-col sm:flex-row gap-1 sm:gap-6"
-          >
-            <img
-              class="size-16 sm:size-24"
-              src="./assets/kinglead.svg"
-              alt=""
-            />
-            <div class="text-left flex-1">
-              <span class="text-sm font-normal"> Dec 2022 - Jan 2023 </span>
-              <div class="flex justify-between text-sm sm:text-base font-bold">
-                Kinglead Company
+              <div>
+                <li>
+                  Implement and maintained front-end Wechat LARP (Live Action
+                  Role Playing) miniprogram, design reusable compenent with
+                  Vue.js and create mobile-first design with UI component
+                  (uView) and CSS framework (TailwindCSS)
+                </li>
+                <li>
+                  Rebuilt and migrate internal management system from Vue2 to
+                  Vue3 with Vue Vben Admin frontend framework and implement API
+                  endpoints for CRUD operations. Provide access to user
+                  administrator and client according to their roles.
+                </li>
               </div>
-              <div class="pb-1 sm:pb-4 text-sm">Frontend Internship</div>
-
-              <p>
-                Responsible on implement new user interface for Kinglead’s
-                official website, and collaborated with backend developers to
-                implement new requirements for the campus training camp
-                registration website
-              </p>
             </div>
           </div>
         </div>
@@ -494,27 +538,32 @@
       <!-- =============== Project =============== -->
       <div
         id="Project"
-        class="pt-32 pb-4 sm:text-center max-w-[52rem] sm:max-w-[100%] mx-4 sm:mx-20"
+        class="pt-32 sm:text-center max-w-[52rem] sm:max-w-[1400px]"
       >
-        <div class="mb-4 text-xl sm:text-3xl tracking-tight font-bold">
+        <div class="py-20 text-xl sm:text-3xl font-bold">
           Project
-        </div>
-        <p class="scroll-fade-in opacity-0 text-sm sm:w-[60%] mx-auto">
-          This is a showcase of my work in a variety of field including Software
-          Development and UI/UX design. For more insights into my other
-          projects, feel free to explore my
-          <a
-            class="text-violet-500"
-            href="https://github.com/ngyixuan"
-            target="_blank"
+          <p
+            class="font-normal pt-4 scroll-fade-in opacity-0 text-sm sm:w-[60%] mx-auto"
           >
-            GitHub <i class="mr-1 uil uil-github"></i>
-          </a>
-        </p>
+            This is a showcase of my work in a variety of field including
+            Software Development and UI/UX design. For more insights into my
+            other projects, feel free to explore my
+            <span class="animate-link">
+              <a
+                class="text-violet-500"
+                href="https://github.com/ngyixuan"
+                target="_blank"
+              >
+                GitHub
+              </a>
+              <i class="text-violet-500 uil uil-github"></i>
+            </span>
+          </p>
+        </div>
       </div>
 
       <!-- Timeline -->
-      <div class="relative mx-4 sm:mx-20 ] mb-20">
+      <div class="relative max-w-[52rem] sm:max-w-[1400px]">
         <div class="flex flex-col sm:flex-row gap-x-3">
           <div
             class="hidden sm:block absolute -left-10 top-0 text-sm flex-none w-8 text-center mb-4 sm:mb-0"
@@ -532,17 +581,74 @@
             </span>
           </div>
           <div
-            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 sm:mb:8 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
+            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
           >
-            <div class="w-full flex sm:flex-row flex-col justify-between">
-              <h2
-                class="text-base sm:text-xl font-bold relative tracking-tight"
+            <div class="">
+              <a
+                class="hover:text-violet-500 w-full flex gap-2"
+                href="https://ratecorner.org/"
+                target="_blank"
               >
-                FootyDAO – Web3 football event APP
-              </h2>
-              <div class="animate-link">
-                <a href="https://footydao.xyz/">Link to website</a>
-              </div>
+                <h2 class="text-base sm:text-xl font-bold">
+                  RateCorner – NUS Course Evaluation Website
+                </h2>
+                <i class="uil uil-external-link-alt"></i>
+              </a>
+            </div>
+
+            <div class="text-sm py-4">
+              We developer a course evaluation platform for NUS students to
+              freely publish, browse, and manage course evaluation. This helps
+              current students gain a more comprehensive understanding of their
+              department's course information and evaluations from former
+              students, enabling them to select courses that better fit their
+              interests and career development.
+            </div>
+            <div class="relative flex flex-wrap gap-2">
+              <label
+                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+              >
+                <img class="size-4 sm:size-5" src="./assets/react.svg" alt />
+                <span class="text-xs">React</span>
+              </label>
+              <label
+                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+              >
+                <img
+                  class="size-4 sm:size-5"
+                  src="./assets/tailwindcss.svg"
+                  alt
+                />
+                <span class="text-xs">TailwindCSS</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-x-3">
+          <div class="hidden sm:block">
+            <span
+              class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center"
+            >
+            </span>
+            <span
+              class="h-[90%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]"
+            >
+            </span>
+          </div>
+          <div
+            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
+          >
+            <div class="">
+              <a
+                class="hover:text-violet-500 w-full flex gap-2"
+                href="https://footydao.xyz/"
+                target="_blank"
+              >
+                <h2 class="text-base sm:text-xl font-bold">
+                  FootyDAO – Web3 football event APP
+                </h2>
+                <i class="uil uil-external-link-alt"></i>
+              </a>
             </div>
 
             <div class="text-sm py-4">
@@ -585,51 +691,52 @@
             >
             </span>
           </div>
-          <div style="animation-delay: 0.2s" class="opacity-0
-          scroll-slide-in-right group relative flex-1 mb-4 sm:mb:8 rounded-lg
-          border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"" >
-          <h2 class="text-base sm:text-xl font-bold relative tracking-tight">
-            Buqi Script Murder Game Smartphone APP
-          </h2>
+          <div
+            style="animation-delay: 0.2s"
+            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
+          >
+            <h2 class="text-base sm:text-xl font-bold">
+              Buqi Script Murder Game Smartphone APP
+            </h2>
+            <div class="text-sm py-4">
+              "Buqi app" is an online platform based on WeChat mini-programs,
+              specializing in murder mystery games. It was built with Vue.js,
+              uniapp and TailwindCSS. I was responsible for the development of
+              modules such as scripts, stores, and event publishing in the
+              application. Considering potential slow responses of certain
+              interfaces during high traffic periods, a preloading solution with
+              localStorage data caching is used to enhance performance.
+            </div>
+            <div class="relative flex flex-wrap gap-2">
+              <label
+                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+              >
+                <img class="size-4 sm:size-5" src="./assets/vue.svg" alt />
+                <span class="text-xs">Vue</span>
+              </label>
+              <label
+                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+              >
+                <img class="size-4 sm:size-5" src="./assets/uniapp.jpg" alt />
+                <span class="text-xs">Uniapp</span>
+              </label>
 
-          <div class="text-sm py-4">
-            "Buqi app" is an online platform based on WeChat mini-programs,
-            specializing in murder mystery games. It was built with Vue.js,
-            uniapp and TailwindCSS. I was responsible for the development of
-            modules such as scripts, stores, and event publishing in the
-            application. Considering potential slow responses of certain
-            interfaces during high traffic periods, a preloading solution with
-            localStorage data caching is used to enhance performance.
-          </div>
-          <div class="relative flex flex-wrap gap-2">
-            <label
-              class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
-            >
-              <img class="size-4 sm:size-5" src="./assets/vue.svg" alt />
-              <span class="text-xs">Vue</span>
-            </label>
-            <label
-              class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
-            >
-              <img class="size-4 sm:size-5" src="./assets/uniapp.jpg" alt />
-              <span class="text-xs">Uniapp</span>
-            </label>
-
-            <label
-              class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
-            >
-              <img
-                class="size-4 sm:size-5"
-                src="./assets/tailwindcss.svg"
-                alt
-              />
-              <span class="text-xs">TailwindCSS</span>
-            </label>
+              <label
+                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+              >
+                <img
+                  class="size-4 sm:size-5"
+                  src="./assets/tailwindcss.svg"
+                  alt
+                />
+                <span class="text-xs">TailwindCSS</span>
+              </label>
+            </div>
           </div>
         </div>
       </div>
     </main>
-
+    <!-- Back To Top -->
     <a
       href="#"
       class="fixed transition-all duration-500 -bottom-[10%] right-10"
@@ -639,5 +746,6 @@
     </a>
   </body>
 
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
   <script type="text/javascript" src="./index.js"></script>
 </html>
