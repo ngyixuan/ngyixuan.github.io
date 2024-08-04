@@ -1,6 +1,6 @@
 # Dependency directories
-node_modules/
+# node_modules/
 
 
 # package-lock in case npm is used
-package-lock.json
+# package-lock.json
