@@ -568,7 +568,9 @@
       </div>
 
       <!-- Timeline -->
-      <div class="relative max-w-[300px] md:max-w-[700px] lg:max-w-[1400px]">
+      <div
+        class="relative max-w-[300px] md:max-w-[700px] lg:max-w-[1400px] mb-36"
+      >
         <div class="flex flex-col lg:flex-row gap-x-3">
           <div
             class="hidden lg:block absolute -left-10 top-0 text-sm flex-none w-8 text-center mb-4 sm:mb-0"
@@ -586,47 +588,78 @@
             </span>
           </div>
           <div
-            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
+            class="opacity-0 scroll-slide-in-right group relative flex flex-col-reverse lg:flex-row items-start lg:justify-between lg:items-center gap-4 flex-1 mb-4 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
           >
-            <div class="">
-              <a
-                class="hover:text-violet-500 w-full flex gap-2"
-                href="https://ratecorner.org/"
-                target="_blank"
-              >
-                <h2 class="text-base sm:text-xl font-bold">
+            <div>
+              <div class="block lg:hidden">
+                <a
+                  class="hover:text-violet-500 w-full flex gap-2"
+                  href="https://ratecorner.org/"
+                  target="_blank"
+                >
+                  <h2 class="text-base sm:text-xl font-bold">
+                    RateCorner – NUS Course Evaluation Website
+                    <i class="uil uil-external-link-alt"></i>
+                  </h2>
+                </a>
+              </div>
+              <div class="hidden lg:flex flex-row w-full gap-4">
+                <h2 class="lg:text-nowrap text-base sm:text-xl font-bold">
                   RateCorner – NUS Course Evaluation Website
                 </h2>
-                <i class="uil uil-external-link-alt"></i>
-              </a>
+                <a
+                  class="hover:text-violet-500 w-full flex gap-2"
+                  href="https://ratecorner.org/"
+                  target="_blank"
+                >
+                  <label
+                    class="cursor-pointer flex items-center justify-center px-2 sm:px-4 py-1 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                  >
+                    <span class="text-xs">Website</span>
+                    <i class="uil uil-external-link-alt"></i>
+                  </label>
+                </a>
+              </div>
+
+              <div class="text-sm py-4">
+                We developer a course evaluation platform for NUS students to
+                freely publish, browse, and manage course evaluation. This helps
+                current students gain a more comprehensive understanding of
+                their department's course information and evaluations from
+                former students, enabling them to select courses that better fit
+                their interests and career development.
+              </div>
+              <div class="relative flex flex-wrap gap-2">
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img class="size-4 sm:size-5" src="./assets/react.svg" alt />
+                  <span class="text-xs">React</span>
+                </label>
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img
+                    class="size-4 sm:size-5"
+                    src="./assets/typescript.svg"
+                    alt
+                  />
+                  <span class="text-xs">TypeScript</span>
+                </label>
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img
+                    class="size-4 sm:size-5"
+                    src="./assets/tailwindcss.svg"
+                    alt
+                  />
+                  <span class="text-xs">TailwindCSS</span>
+                </label>
+              </div>
             </div>
 
-            <div class="text-sm py-4">
-              We developer a course evaluation platform for NUS students to
-              freely publish, browse, and manage course evaluation. This helps
-              current students gain a more comprehensive understanding of their
-              department's course information and evaluations from former
-              students, enabling them to select courses that better fit their
-              interests and career development.
-            </div>
-            <div class="relative flex flex-wrap gap-2">
-              <label
-                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
-              >
-                <img class="size-4 sm:size-5" src="./assets/react.svg" alt />
-                <span class="text-xs">React</span>
-              </label>
-              <label
-                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
-              >
-                <img
-                  class="size-4 sm:size-5"
-                  src="./assets/tailwindcss.svg"
-                  alt
-                />
-                <span class="text-xs">TailwindCSS</span>
-              </label>
-            </div>
+            <img class="lg:size-48" src="./assets/ratecorner.png" alt="" />
           </div>
         </div>
         <div class="flex flex-col lg:flex-row gap-x-3">
@@ -641,50 +674,168 @@
             </span>
           </div>
           <div
-            class="opacity-0 scroll-slide-in-right group relative flex-1 mb-4 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
+            class="opacity-0 scroll-slide-in-right group relative flex flex-col-reverse lg:flex-row items-start lg:justify-between lg:items-center gap-4 flex-1 mb-4 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
           >
-            <div class="">
-              <a
-                class="hover:text-violet-500 w-full flex gap-2"
-                href="https://footydao.xyz/"
-                target="_blank"
-              >
-                <h2 class="text-base sm:text-xl font-bold">
-                  FootyDAO – Web3 football event APP
+            <div>
+              <div class="block lg:hidden">
+                <a
+                  class="hover:text-violet-500 w-full flex gap-2"
+                  href="https://github.com/Quantum3-Labs/stormbit-ui"
+                  target="_blank"
+                >
+                  <h2 class="text-base sm:text-xl font-bold">
+                    Stormbit
+                    <i class="uil uil-external-link-alt"></i>
+                  </h2>
+                </a>
+              </div>
+              <div class="hidden lg:flex flex-row w-full gap-4">
+                <h2 class="text-nowrap text-base sm:text-xl font-bold">
+                  Stormbit
                 </h2>
-                <i class="uil uil-external-link-alt"></i>
-              </a>
-            </div>
+                <a
+                  class="hover:text-violet-500 w-full flex gap-2"
+                  href="https://github.com/Quantum3-Labs/stormbit-ui"
+                  target="_blank"
+                >
+                  <label
+                    class="cursor-pointer flex items-center justify-center px-2 sm:px-4 py-1 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                  >
+                    <span class="text-xs">Github</span>
+                    <i class="uil uil-external-link-alt"></i>
+                  </label>
+                </a>
+              </div>
 
-            <div class="text-sm py-4">
-              We developed a mobile and web application with React and Tailwind
-              CSS which enables cryptocurrency users to participate in football
-              games organized by FootyDAO at various Ethereum conferences
-              worldwide. To enhance the user experience on the website, we
-              provide opportunities for engagement, user can also explore and
-              stay up-to-date with the latest football events, including
-              upcoming matches.
+              <div class="text-sm py-4">
+                Stormbit is an advanced peer-to-peer lending platform that
+                seamlessly integrates traditional financial systems with
+                innovative cryptocurrency markets. Utilizing blockchain
+                technology, Stormbit offers unique lending options such as
+                undercollateralized, NFT-backed, and fully customizable loans.
+                Our mission is to make financial services accessible to all,
+                empowering underrepresented communities through decentralized
+                finance (DeFi).
+              </div>
+              <div class="relative flex flex-wrap gap-2">
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img class="size-4 sm:size-5" src="./assets/react.svg" alt />
+                  <span class="text-xs">React</span>
+                </label>
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img
+                    class="size-4 sm:size-5"
+                    src="./assets/typescript.svg"
+                    alt
+                  />
+                  <span class="text-xs">TypeScript</span>
+                </label>
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img
+                    class="size-4 sm:size-5"
+                    src="./assets/tailwindcss.svg"
+                    alt
+                  />
+                  <span class="text-xs">TailwindCSS</span>
+                </label>
+              </div>
             </div>
-            <div class="relative flex flex-wrap gap-2">
-              <label
-                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
-              >
-                <img class="size-4 sm:size-5" src="./assets/react.svg" alt />
-                <span class="text-xs">React</span>
-              </label>
-              <label
-                class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
-              >
-                <img
-                  class="size-4 sm:size-5"
-                  src="./assets/tailwindcss.svg"
-                  alt
-                />
-                <span class="text-xs">TailwindCSS</span>
-              </label>
-            </div>
+            <img class="lg:size-48" src="./assets/stormbit.png" alt="" />
           </div>
         </div>
+        <div class="flex flex-col lg:flex-row gap-x-3">
+          <div class="hidden lg:block">
+            <span
+              class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center"
+            >
+            </span>
+            <span
+              class="h-[90%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]"
+            >
+            </span>
+          </div>
+          <div
+            class="opacity-0 scroll-slide-in-right group relative flex flex-col-reverse lg:flex-row items-start lg:justify-between lg:items-center gap-4 flex-1 mb-4 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
+          >
+            <div>
+              <div class="block lg:hidden">
+                <a
+                  class="hover:text-violet-500 w-full flex gap-2"
+                  href="https://footydao.xyz/"
+                  target="_blank"
+                >
+                  <h2 class="text-base sm:text-xl font-bold">
+                    FootyDAO – Web3 football event APP
+                    <i class="uil uil-external-link-alt"></i>
+                  </h2>
+                </a>
+              </div>
+              <div class="hidden lg:flex flex-row w-full gap-4">
+                <h2 class="text-nowrap text-base sm:text-xl font-bold">
+                  FootyDAO – Web3 football event APP
+                </h2>
+                <a
+                  class="hover:text-violet-500 w-full flex gap-2"
+                  href="https://footydao.xyz/"
+                  target="_blank"
+                >
+                  <label
+                    class="cursor-pointer flex items-center justify-center px-2 sm:px-4 py-1 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                  >
+                    <span class="text-xs">Website</span>
+                    <i class="uil uil-external-link-alt"></i>
+                  </label>
+                </a>
+              </div>
+
+              <div class="text-sm py-4">
+                We developed a mobile and web application with React and
+                Tailwind CSS which enables cryptocurrency users to participate
+                in football games organized by FootyDAO at various Ethereum
+                conferences worldwide. To enhance the user experience on the
+                website, we provide opportunities for engagement, user can also
+                explore and stay up-to-date with the latest football events,
+                including upcoming matches.
+              </div>
+              <div class="relative flex flex-wrap gap-2">
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img class="size-4 sm:size-5" src="./assets/react.svg" alt />
+                  <span class="text-xs">React</span>
+                </label>
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img
+                    class="size-4 sm:size-5"
+                    src="./assets/typescript.svg"
+                    alt
+                  />
+                  <span class="text-xs">TypeScript</span>
+                </label>
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img
+                    class="size-4 sm:size-5"
+                    src="./assets/tailwindcss.svg"
+                    alt
+                  />
+                  <span class="text-xs">TailwindCSS</span>
+                </label>
+              </div>
+            </div>
+            <img class="lg:size-48" src="./assets/footydao.png" alt="" />
+          </div>
+        </div>
+
         <div class="flex flex-col lg:flex-row gap-x-3">
           <div class="hidden lg:block">
             <span
@@ -737,6 +888,204 @@
                 <span class="text-xs">TailwindCSS</span>
               </label>
             </div>
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-x-3">
+          <div class="hidden lg:block">
+            <span
+              class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center"
+            >
+            </span>
+            <span
+              class="h-[90%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]"
+            >
+            </span>
+          </div>
+          <div
+            class="opacity-0 scroll-slide-in-right group relative flex flex-col-reverse lg:flex-row items-start lg:justify-between lg:items-center gap-4 flex-1 mb-4 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
+          >
+            <div>
+              <div class="block lg:hidden">
+                <a
+                  class="hover:text-violet-500 w-full flex gap-2"
+                  href="https://github.com/Quantum3-Labs/scaffold-stark-2"
+                  target="_blank"
+                >
+                  <h2 class="text-base sm:text-xl font-bold">
+                    Scaffold-Stark 2
+                    <i class="uil uil-external-link-alt"></i>
+                  </h2>
+                </a>
+              </div>
+              <div class="hidden lg:flex flex-row w-full gap-4">
+                <h2 class="text-nowrap text-base sm:text-xl font-bold">
+                  Scaffold-Stark 2
+                </h2>
+                <a
+                  class="hover:text-violet-500 w-full flex gap-2"
+                  href="https://github.com/Quantum3-Labs/scaffold-stark-2"
+                  target="_blank"
+                >
+                  <label
+                    class="cursor-pointer flex items-center justify-center px-2 sm:px-4 py-1 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                  >
+                    <span class="text-xs">Github</span>
+                    <i class="uil uil-external-link-alt"></i>
+                  </label>
+                </a>
+              </div>
+
+              <div class="text-sm py-4">
+                An open-source, up-to-date toolkit for building decentralized
+                applications (dapps) on Starknet blockchain. It's designed to
+                make it easier for developers to create and deploy smart
+                contracts and build user interfaces that interact with those
+                contracts.
+              </div>
+              <div class="relative flex flex-wrap gap-2">
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img class="size-4 sm:size-5" src="./assets/figma.svg" alt />
+                  <span class="text-xs">Figma</span>
+                </label>
+              </div>
+            </div>
+            <img class="lg:size-48" src="./assets/scaffoldStark.png" alt="" />
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-x-3">
+          <div class="hidden lg:block">
+            <span
+              class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center"
+            >
+            </span>
+            <span
+              class="h-[90%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]"
+            >
+            </span>
+          </div>
+          <div
+            class="opacity-0 scroll-slide-in-right group relative flex flex-col-reverse lg:flex-row items-start lg:justify-between lg:items-center gap-4 flex-1 mb-4 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
+          >
+            <div>
+              <div class="block lg:hidden">
+                <a
+                  class="hover:text-violet-500 w-full flex gap-2"
+                  href="https://github.com/Quantum3-Labs/speedrunstark"
+                  target="_blank"
+                >
+                  <h2 class="text-base sm:text-xl font-bold">
+                    SpeedRun Stark
+                    <i class="uil uil-external-link-alt"></i>
+                  </h2>
+                </a>
+              </div>
+              <div class="hidden lg:flex flex-row w-full gap-4">
+                <h2 class="text-nowrap text-base sm:text-xl font-bold">
+                  SpeedRun Stark
+                </h2>
+                <a
+                  class="hover:text-violet-500 w-full flex gap-2"
+                  href="https://github.com/Quantum3-Labs/speedrunstark"
+                  target="_blank"
+                >
+                  <label
+                    class="cursor-pointer flex items-center justify-center px-2 sm:px-4 py-1 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                  >
+                    <span class="text-xs">Github</span>
+                    <i class="uil uil-external-link-alt"></i>
+                  </label>
+                </a>
+              </div>
+
+              <div class="text-sm py-4">
+                SpeedRunStark challenges (Powered by Scaffold-Stark 2), Learn
+                how to use Scaffold-Stark to create decentralized applications
+                on Starknet.
+              </div>
+              <div class="relative flex flex-wrap gap-2">
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img class="size-4 sm:size-5" src="./assets/figma.svg" alt />
+                  <span class="text-xs">Figma</span>
+                </label>
+              </div>
+            </div>
+            <img class="lg:size-48" src="./assets/speedrunStark.png" alt="" />
+          </div>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-x-3">
+          <div class="hidden lg:block">
+            <span
+              class="w-[13px] h-[13px] bg-violet-400 rounded-full inline-block text-center"
+            >
+            </span>
+            <span
+              class="h-[90%] w-[1px] bg-violet-400 block text-center translate-x-[6px] -translate-y-[8px]"
+            >
+            </span>
+          </div>
+          <div
+            class="opacity-0 scroll-slide-in-right group relative flex flex-col-reverse lg:flex-row items-start lg:justify-between lg:items-center gap-4 flex-1 mb-4 rounded-lg border border-slate-200 sm:rounded-xl py-4 sm:py-6 px-4 sm:px-12"
+          >
+            <div>
+              <div class="flex flex-row w-full gap-4">
+                <h2 class="text-nowrap text-base sm:text-xl font-bold">
+                  Zhifeng Uniapp Fresh Air Control System
+                </h2>
+                <a
+                  class="hover:text-violet-500 flex gap-2"
+                  href="https://github.com/ngyixuan/project-zhifeng-uniapp.git"
+                  target="_blank"
+                >
+                  <label
+                    class="cursor-pointer flex items-center justify-center px-2 sm:px-4 py-1 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                  >
+                    <span class="text-xs">Github</span>
+                    <i class="uil uil-external-link-alt"></i>
+                  </label>
+                </a>
+                <a
+                  class="hover:text-violet-500 flex gap-2"
+                  href="https://www.figma.com/design/2XKQ22ajeGvf3a27vdFrkw/%E6%99%BA%E9%A3%8E?node-id=0-1&t=1nYcwBXgHqrB0Hg0-1"
+                  target="_blank"
+                >
+                  <label
+                    class="cursor-pointer flex items-center justify-center px-2 sm:px-4 py-1 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                  >
+                    <span class="text-xs">Figma</span>
+                    <i class="uil uil-external-link-alt"></i>
+                  </label>
+                </a>
+              </div>
+
+              <div class="text-sm py-4">
+                Zhi-Feng App is a fresh air control system, managed by AI
+                technology and full DC inverter technology, can appropriately
+                adjust the fresh air volume, cleanliness, and flow rate based on
+                the indoor environment to achieve optimal indoor air quality.
+                The project’s functional modules include air quality data
+                visualization and monitoring, intelligent control, service
+                feedback, and profile page.
+              </div>
+              <div class="relative flex flex-wrap gap-2">
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img class="size-4 sm:size-5" src="./assets/figma.svg" alt />
+                  <span class="text-xs">Figma</span>
+                </label>
+                <label
+                  class="flex items-center justify-center px-2 sm:px-4 py-1 sm:py-2 border gap-1 sm:gap-2 border-slate-200 rounded-full"
+                >
+                  <img class="size-4 sm:size-5" src="./assets/uniapp.jpg" alt />
+                  <span class="text-xs">Uniapp</span>
+                </label>
+              </div>
+            </div>
+            <img class="lg:size-48" src="./assets/zhifeng.png" alt="" />
           </div>
         </div>
       </div>
